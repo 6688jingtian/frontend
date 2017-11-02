@@ -1,0 +1,375 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": {
+        "filter": [
+            {
+                "id": "product",
+                "type": "list",
+                "name": "产品线",
+                "data": [
+                    {
+                        "id": "1",
+                        "name": "ssg"
+                    }
+                ]
+            },
+            {
+                "id": "qps",
+                "type": "range",
+                "name": "qps",
+                "data": {
+                    "min": 1,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%"
+                }
+            },
+            {
+                "id": "date",
+                "type": "date",
+                "name": "日期",
+                "data": [
+                    {
+                       "id": "from",
+                       "name": "start date",
+                       "value": "2016-09-09" 
+                    },
+                    {
+                       "id": "to",
+                       "name": "end date",
+                       "value": "2016-09-20" 
+                    }
+                ]
+            },
+            {
+                "id": "time",
+                "type": "time",
+                "name": "时间",
+                "data": [
+                    {
+                       "id": "from",
+                       "name": "start time",
+                       "value": "14:30:00" 
+                    },
+                    {
+                       "id": "to",
+                       "name": "end time",
+                       "value": "18:30:00" 
+                    }
+                ]
+            },
+            {
+                "id": "datetime",
+                "type": "datetime",
+                "name": "日期时间",
+                "data": [
+                    {
+                       "id": "from",
+                       "name": "start",
+                       "value": "2016-09-10 14:30:00" 
+                    },
+                    {
+                       "id": "to",
+                       "name": "end",
+                       "value": "2016-09-20 18:30:00" 
+                    }
+                ]
+            }
+        ],
+        "charts": [
+            {
+                "id": 1,
+                "name": "性能场景看板",
+                "description": "性能场景看板",
+                "type": "2",
+                "data": [
+                    {
+                        "id": 17,
+                        "name": "rgc",
+                        "product": "ssp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 14,
+                        "name": "gps",
+                        "product": "ssp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 4,
+                        "name": "server",
+                        "product": "adx",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 13,
+                        "name": "tag_redis",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 8,
+                        "name": "lbs",
+                        "product": "ssp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 3,
+                        "name": "cpa",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 7,
+                        "name": "server",
+                        "product": "dmp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 15,
+                        "name": "sa",
+                        "product": "ssp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 20,
+                        "name": "erised",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 11,
+                        "name": "bs",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 12,
+                        "name": "ui",
+                        "product": "lu",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 16,
+                        "name": "ubmc",
+                        "product": "ubmc",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 1,
+                        "name": "bfp4app",
+                        "product": "ssp",
+                        "deps": [
+                            {
+                                "id": 8
+                            },
+                            {
+                                "id": 4
+                            },
+                            {
+                                "id": 14
+                            },
+                            {
+                                "id": 17
+                            },
+                            {
+                                "id": 2
+                            }
+                        ],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 9,
+                        "name": "mdsp_ctr",
+                        "product": "ps",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 18,
+                        "name": "ui",
+                        "product": "nova",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 10,
+                        "name": "wall",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 2,
+                        "name": "as",
+                        "product": "mdsp",
+                        "deps": [
+                            {
+                                "id": 1
+                            },
+                            {
+                                "id": 3
+                            },
+                            {
+                                "id": 4
+                            },
+                            {
+                                "id": 5
+                            },
+                            {
+                                "id": 9
+                            },
+                            {
+                                "id": 10
+                            },
+                            {
+                                "id": 13
+                            },
+                            {
+                                "id": 16
+                            },
+                            {
+                                "id": 19
+                            },
+                            {
+                                "id": 11
+                            },
+                            {
+                                "id": 7
+                            },
+                            {
+                                "id": 20
+                            }
+                        ],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 6,
+                        "name": "as",
+                        "product": "nova",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 21,
+                        "name": "as",
+                        "product": "lu",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 5,
+                        "name": "render",
+                        "product": "mdsp",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    },
+                    {
+                        "id": 19,
+                        "name": "mdsp_cvr",
+                        "product": "ps",
+                        "deps": [],
+                        "x": 0,
+                        "y": 0,
+                        "level": 0,
+                        "dcs_date_time": 20160918,
+                        "task_name": "nova_topology"
+                    }
+                ]
+            }
+        ]
+    }
+}

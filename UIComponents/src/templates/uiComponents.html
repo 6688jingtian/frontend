@@ -1,0 +1,23 @@
+<div  class="conponents-labels">
+    <ui-checkbox ng-model="currentComponent.data.checkAll"
+                 indeterminate="currentComponent.data.indeterminate"
+                 ng-change="toggleCheckAll(currentComponent.data.checkAll, currentComponent)">
+        Check All ({{currentComponent.data.downloadItems.length}})</ui-checkbox>
+    <ui-checkbox-group ng-model="currentComponent.data.downloadItems"
+                       ng-change="downloadItemsChange(currentComponent.data.downloadItems)">
+        <ui-checkbox ng-repeat="item in getLeafComponents(currentComponent.children) track by $index"
+                     value="{{item.id}}">{{item.name}}</ui-checkbox>
+    </ui-checkbox-group>
+</div>
+<div ng-if="isCurrentComponent('UIComponents')">
+    <ui-button class="ui-primary" ng-click="downloadSelected(currentComponent, '.min')"
+               ng-disabled="!currentComponent.data.indeterminate && !currentComponent.data.checkAll">
+        <ui-icon type="download"></ui-icon>
+        download(min)
+    </ui-button>
+    <ui-button class="ui-primary" ng-click="downloadSelected(currentComponent)"
+               ng-disabled="!currentComponent.data.indeterminate && !currentComponent.data.checkAll">
+        <ui-icon type="download"></ui-icon>
+        download
+    </ui-button>
+</div>

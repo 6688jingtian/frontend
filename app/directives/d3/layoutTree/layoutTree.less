@@ -1,0 +1,36 @@
+.d3-layout-tree {
+    position: relative;
+    .node circle {
+        cursor: pointer;
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .node text {
+        font-size: 11px;
+    }
+
+    path.link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+
+    .d3-tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, .6);
+        padding: 5px 10px;
+        border-radius: 2px;
+        color: #ffffff;
+        transition: all .25s linear;
+        font-size: 12px;
+        p {
+            text-indent: 2em;
+            margin: 0;
+        }
+        a {
+            //color: #ffffff;
+        }
+    }
+}

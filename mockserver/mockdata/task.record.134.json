@@ -1,0 +1,156 @@
+{
+  "status": 0,
+  "message": "success",
+  "result": {
+    "tasks": [
+      {
+        "beginAt": "2016-11-09 16:06:02",
+        "createAt": "2016-11-09 16:03:00",
+        "creator": "sunchenjiao",
+        "dependency": 0,
+        "endAt": "2016-11-09 16:07:03",
+        "exeConf": [
+          "20161018",
+          "hc_cae_search_qps"
+        ],
+        "id": 126,
+        "inputConf": [
+          {
+            "inputType": "meta",
+            "subscriptionId": "21",
+            "metaId": "10181"
+          }
+        ],
+        "missionId": 12,
+        "msg": "",
+        "options": {
+          "executor-cores": "2",
+          "num-executors": "2",
+          "executor-memory": "2G",
+          "driver-memory": "2G",
+          "driver-cores": "2"
+        },
+        "outputConf": [
+          {
+            "outputType": "meta",
+            "subscriptionId": "21",
+            "metaId": "10182"
+          }
+        ],
+        "planId": 27,
+        "recordId": 126,
+        "retryTimes": 0,
+        "sceneId": 4,
+        "status": "FINISHED",
+        "submitAt": "2016-11-09 16:04:00",
+        "taskName": "拓扑",
+        "updateAt": "2016-11-09 16:07:03"
+      },
+      {
+        "beginAt": "2016-11-09 16:06:02",
+        "createAt": "2016-11-09 16:03:00",
+        "creator": "sunchenjiao",
+        "dependency": 0,
+        "endAt": "2016-11-09 16:07:03",
+        "exeConf": [
+          "20161018",
+          "hc_cae_search_qps"
+        ],
+        "id": 126,
+        "inputConf": [
+          {
+            "inputType": "meta",
+            "subscriptionId": "21",
+            "metaId": "10181"
+          }
+        ],
+        "missionId": 12,
+        "msg": "",
+        "options": {
+          "executor-cores": "2",
+          "num-executors": "2",
+          "executor-memory": "2G",
+          "driver-memory": "2G",
+          "driver-cores": "2"
+        },
+        "outputConf": [
+          {
+            "outputType": "meta",
+            "subscriptionId": "21",
+            "metaId": "10182"
+          }
+        ],
+        "planId": 27,
+        "recordId": 126,
+        "retryTimes": 0,
+        "sceneId": 4,
+        "status": "FINISHED",
+        "submitAt": "2016-11-09 16:04:00",
+        "taskName": "拓扑拓扑拓扑",
+        "updateAt": "2016-11-09 16:07:03"
+      }
+    ],
+    "chart": {
+      "description": "",
+      "filters": [],
+      "id": 0,
+      "name": "",
+      "nodes": [
+        {
+          "color": "green",
+          "deps": [
+            {
+              "id": 0
+            }
+          ],
+          "id": 126,
+          "name": "拓扑",
+          "remark": {},
+          "x": 0,
+          "y": 0
+        },
+        {
+          "color": "green",
+          "deps": [
+            {
+              "id": 126
+            }
+          ],
+          "id": 27,
+          "name": "拓扑2",
+          "remark": {},
+          "x": 0,
+          "y": 0
+        },
+        {
+          "color": "green",
+          "deps": [
+            {
+              "id": 126
+            }
+          ],
+          "id": 25,
+          "name": "拓扑3",
+          "remark": {},
+          "x": 0,
+          "y": 0
+        },
+        {
+          "color": "red",
+          "deps": [
+            {
+              "id": 126
+            }
+          ],
+          "id": 24,
+          "name": "拓扑2",
+          "remark": {},
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "subId": 0,
+      "type": 2
+    }
+  }
+}

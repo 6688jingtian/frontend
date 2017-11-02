@@ -1,0 +1,1484 @@
+{
+  "status": 0,
+  "message": "success",
+  "result": {
+    "id": 1016,
+    "name": "网盟拓扑树形部署图",
+    "description": "根据给定的 module id 来展示树形结构的模块部署图",
+    "type": 9,
+    "subId": 0,
+    "expandLevel": 6,
+    "filters": [
+      {
+        "chartId": 1016,
+        "id": "query",
+        "type": "type",
+        "name": "不显示查询条件",
+        "data": [
+          {
+            "module_id": "1",
+            "time": "2016120111"
+          }
+        ]
+      }
+    ],
+    "children": [
+      {
+        "id": 0,
+        "name": "sa",
+        "description": "模块名称",
+        "children": [
+          {
+            "id": 1,
+            "name": "sa(ssp)",
+            "description": "部署方式",
+            "children": [
+              {
+                "id": 2,
+                "name": "qps",
+                "description": "统计纬度",
+                "children": [
+                  {
+                    "id": 0,
+                    "name": "sa",
+                    "description": null,
+                    "children": [
+                      {
+                        "id": 0,
+                        "name": "doubleclick_qps",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "doubleclick_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "doubleclick_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "sina_qps",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "sina_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "sina_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "iqiyi_qps",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "iqiyi_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "iqiyi_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "allyes_qps",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "allyes_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "qps",
+                                "data_name": "allyes_qps",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      }
+                    ],
+                    "remark": null
+                  }
+                ],
+                "remark": {}
+              },
+              {
+                "id": 2,
+                "name": "time",
+                "description": "统计纬度",
+                "children": [
+                  {
+                    "id": 0,
+                    "name": "server",
+                    "description": null,
+                    "children": [
+                      {
+                        "id": 0,
+                        "name": "allyes_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "224.9",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 2249,
+                                "avg": 224.9,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 2249,
+                                "avg": 224.9,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "iqiyi_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "doubleclick_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "sina_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      }
+                    ],
+                    "remark": null
+                  },
+                  {
+                    "id": 0,
+                    "name": "cm",
+                    "description": null,
+                    "children": [
+                      {
+                        "id": 0,
+                        "name": "allyes_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "iqiyi_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "doubleclick_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "sina_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "cm",
+                                "product_name": "cm",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      }
+                    ],
+                    "remark": null
+                  },
+                  {
+                    "id": 0,
+                    "name": "sa",
+                    "description": null,
+                    "children": [
+                      {
+                        "id": 0,
+                        "name": "allyes_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "allyes_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "iqiyi_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "iqiyi_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "doubleclick_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "doubleclick_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "sina_at",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "sa",
+                                "product_name": "",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "time",
+                                "data_name": "sina_at",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      }
+                    ],
+                    "remark": null
+                  }
+                ],
+                "remark": {}
+              },
+              {
+                "id": 2,
+                "name": "fail",
+                "description": "统计纬度",
+                "children": [
+                  {
+                    "id": 0,
+                    "name": "server",
+                    "description": null,
+                    "children": [
+                      {
+                        "id": 0,
+                        "name": "doubleclick_succ_rate",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "doubleclick_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "doubleclick_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "sina_succ_rate",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "sina_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "sina_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "allyes_succ_rate",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "0.0",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "allyes_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 0,
+                                "avg": 0,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "allyes_succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      },
+                      {
+                        "id": 0,
+                        "name": "succ_rate",
+                        "description": null,
+                        "children": [
+                          {
+                            "id": 0,
+                            "name": "279640.3",
+                            "description": null,
+                            "children": null,
+                            "remark": null
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看对比关系",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1017",
+                              "query": {
+                                "count": 10,
+                                "sum": 2796403,
+                                "avg": 279640.3,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": 0,
+                            "name": "查看详情",
+                            "description": null,
+                            "children": null,
+                            "remark": {
+                              "chartId": "1018",
+                              "query": {
+                                "count": 10,
+                                "sum": 2796403,
+                                "avg": 279640.3,
+                                "module_name": "server",
+                                "product_name": "adx",
+                                "machine_physic_idc": "nj02",
+                                "machine_logic_idc": "nj02",
+                                "dcs_date_time": "2016120111",
+                                "dim": "fail",
+                                "data_name": "succ_rate",
+                                "deploy_ids": [
+                                  863,
+                                  857
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "remark": null
+                      }
+                    ],
+                    "remark": null
+                  }
+                ],
+                "remark": {}
+              }
+            ],
+            "remark": {
+              "filters": {
+                "deploy_ids": [
+                  863
+                ],
+                "module_name": "sa",
+                "product_name": "ssp",
+                "machine_physic_idc": "nj02",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016120111"
+              }
+            }
+          }
+        ],
+        "remark": {}
+      }
+    ]
+  }
+}

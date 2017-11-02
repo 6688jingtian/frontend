@@ -1,0 +1,26 @@
+<div class="toolbar-box">
+    <ui-radio-group ng-model="currentComponent.data.size">
+        <ui-radio-button
+            ng-repeat="size in currentComponent.data.sizes track by $index"
+            ng-value="size">{{size}}</ui-radio-button>
+    </ui-radio-group>
+
+    <ui-button selected="true" ng-click="currentComponent.data.withBorder = !currentComponent.data.withBorder">带边框</ui-button>
+    <ui-button selected="true" ng-click="currentComponent.data.fixedHeader = !currentComponent.data.fixedHeader">固定表头</ui-button>
+    <ui-button selected="true" ng-disabled="true"
+        ng-click="currentComponent.data.colResizable = !currentComponent.data.colResizable"
+        tooltip="鼠标移动到列交界处，可拖拽改变列宽">
+        可改变列宽
+    </ui-button>
+    <ui-icon type="infocirlce">鼠标hover到列交界处，可调整列宽</ui-icon>
+    <!--<ui-button selected="true" ng-click="currentComponent.data.tableLayoutFixed = !currentComponent.data.tableLayoutFixed">固定列</ui-button>-->
+</div>
+
+<ui-table cols="currentComponent.data.cols" rows="currentComponent.data.rows"
+    height="currentComponent.data.height"
+    with-border="currentComponent.data.withBorder"
+    fixed-header="currentComponent.data.fixedHeader"
+    col-resizable="currentComponent.data.colResizable"
+    table-layout-fixed="currentComponent.data.tableLayoutFixed"
+    size="currentComponent.data.size"
+></ui-table>

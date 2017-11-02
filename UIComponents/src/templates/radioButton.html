@@ -1,0 +1,37 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._onRadioChange = function (val) {
+        console.log('_onRadioChange', val);
+    };
+</script>
+
+<p>Radio: {{currentComponent.data.radio}}</p>
+<ui-radio ng-model="currentComponent.data.radio">Radio</ui-radio>
+
+<p>Username: {{currentComponent.data.name}}</p>
+<ui-radio-group ng-model="currentComponent.data.name"
+    ng-change="_onRadioChange(currentComponent.data.name)">
+    <ui-radio value="Bruce">Bruce</ui-radio>
+    <ui-radio value="Alex">Alex</ui-radio>
+    <ui-radio value="Alvy">Alvy</ui-radio>
+    <ui-radio value="Bernard">Bernard</ui-radio>
+</ui-radio-group>
+
+<p>Langue: {{currentComponent.data.langue}}</p>
+<ui-radio-group ng-model="currentComponent.data.langue" vertical="true">
+    <ui-radio value="JavaScript">JavaScript</ui-radio>
+    <ui-radio value="Java">Java</ui-radio>
+    <ui-radio value="Objective C">Objective C</ui-radio>
+    <ui-radio value="Swift">Swift</ui-radio>
+    <ui-radio value="Disabled" ng-disabled="true">Disabled</ui-radio>
+</ui-radio-group>
+
+<p>Langue: {{currentComponent.data.langue}}</p>
+<ui-radio-group ng-model="currentComponent.data.langue"
+    ng-change="_onRadioChange(currentComponent.data.langue);">
+    <ui-radio-button value="JavaScript">JavaScript</ui-radio-button>
+    <ui-radio-button value="Java">Java</ui-radio-button>
+    <ui-radio-button value="Objective C">Objective C</ui-radio-button>
+    <ui-radio-button value="Swift">Swift</ui-radio-button>
+    <ui-radio-button value="Disabled" ng-disabled="true">Disabled</ui-radio-button>
+</ui-radio-group>

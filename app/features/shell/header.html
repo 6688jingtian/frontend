@@ -1,0 +1,17 @@
+<div href="#/index"><img src="./img/index/ep_logo_y.png"></div>
+<div>
+    <ul class="ui-nav">
+        <li ng-class="{active: shell.isActive(item)}" ng-repeat="item in shell.headerItems">
+            <a ui-sref="shell.{{item.id}}">{{item.name}}</a>
+            <section class="ui-sub-view" ng-if="item.id=='templates'">
+                <ul class="ui-sub-nav" ng-repeat="ul in item.children">
+                    <li ng-repeat="subItem in ul.children">
+                        <a ui-sref="shell.{{item.id}}.{{subItem.id}}">{{subItem.name}}</a>
+                        <!-- ng-click="shell.templatesSubItemSwitch(subItem)" -->
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</div>
+

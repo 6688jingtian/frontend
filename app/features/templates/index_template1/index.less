@@ -1,0 +1,134 @@
+@import (reference) "../../../style/theme.less";
+
+@headerBgColor: rgba(24, 25, 74, 0.9);
+@headerBdColor: #003D79;
+@bgColor: #FFF;
+@bgGeneralColor: #F8F8F8;
+@bgPrimaryColor: rgba(24, 25, 74, 0.9);
+@textColor: #000;
+@textReverseColor: #FFF;
+@textPrimaryColor: rgba(24, 25, 74, 0.9);
+@borderColor: #E2E2E2;
+@borderPrimaryColor: rgba(24, 25, 74, 0.9);
+.index-template-view {
+    background-color: @bgColor;
+    border: dotted 1px @borderColor;
+    .index-ct {
+        .header-ct {
+            box-sizing: border-box;
+            font-size: 20px;
+            padding: 0 0 0 100px;
+            line-height: 60px;
+            border-bottom: solid 1px @headerBdColor;
+            color: @textReverseColor;
+            background-color: @headerBgColor;
+        }
+        .carousel-ct {
+            height: 400px;
+            > div {
+                height: 100%;
+                color: @textReverseColor;
+                background-color: @bgPrimaryColor;
+            }
+        }
+        .overview-ct {
+            .caption {
+                text-align: center;
+                line-height: 100px;
+                font-size: 20px;
+            }
+            .detail {
+                width: 1040px;
+                margin: 0 auto;
+            }
+            &.overview-one-ct {
+                height: 450px;
+                .detail {
+                    height: 300px;
+                    .flex-box {
+                        > div {
+                            box-sizing: border-box;
+                            text-align: center;
+                            height: 250px;
+                            width: 200px;
+                            padding: 15px 10px;
+                            border: solid 1px @borderColor;
+                            div {
+                                &:first-child {
+                                    height: 120px;
+                                }
+                                &:nth-child(2) {
+                                    font-size: 16px;
+                                    height: 50px;
+                                }
+                                &:nth-child(3) {
+                                    height: 50px;
+                                    .ui-primary {
+                                        opacity: .8;
+                                        color: @textReverseColor;
+                                        background-color: @bgPrimaryColor;
+                                        border-color: @borderPrimaryColor;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.overview-two-ct {
+                height: 250px;
+                background-color: @bgGeneralColor;
+                .detail {
+                    height: 150px;
+                    .flex-box {
+                        > div {
+                            box-sizing: border-box;
+                            text-align: center;
+                            height: 100px;
+                            width: 300px;
+                            // border: solid 1px @borderColor;
+                            > div {
+                                &:first-child {
+                                    line-height: 50px;
+                                    font-size: 30px;
+                                    opacity: .8;
+                                    color: @textPrimaryColor;
+                                }
+                                &:nth-child(2) {
+                                    line-height: 50px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.overview-three-ct {
+                height: 450px;
+                .detail {
+                    height: 300px;
+                }
+            }
+        }
+        .footer-ct {
+            text-align: center;
+            line-height: 35px;
+            background-color: @bgGeneralColor;
+            > div {
+                span {
+                    margin: 0 10px;
+                    a {
+                        opacity: .8;
+                        color: @textPrimaryColor;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

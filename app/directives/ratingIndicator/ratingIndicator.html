@@ -1,0 +1,9 @@
+<div class="rating-indicator">
+    <icon class="star" ng-repeat="item in items track by $index"
+        ng-class="{active: $index <= hoverIndex || $index < star}"
+        ng-mouseover="onStarMouseover($index)"
+        ng-mouseleave="onStarMouseleave($index)"
+        ng-click="selectStar($index)">☆</icon>
+    <span>{{star}}</span>
+    <input ng-model="star" type="hidden">
+</div>

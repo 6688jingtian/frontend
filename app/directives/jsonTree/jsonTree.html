@@ -1,0 +1,31 @@
+<ul class="ui-box">
+    <li ng-repeat="(key, value) in nodes track by key"
+        ng-class="{
+            collapsed: nodes.collapsed,
+            expanded: ollapsed}">
+        <div class="list-key-box" ng-if="!value || (typeofReal(value) != 'object'
+            && typeofReal(value) != 'array'
+            && key != 'collapsed')" ng-class="{
+            collapsed: nodes.collapsed,
+            expanded: !nodes.collapsed}">
+            <span>
+                <b ng-click="clickKey(key)">{{key}}:</b> {{value}}
+            </span>
+        </div>
+        <div class="" ng-if="value && typeofReal(value) == 'object'
+            || typeofReal(value) == 'array'"
+            ng-class="{
+                collapsed: nodes.collapsed,
+                expanded: !nodes.collapsed}">
+            <div>
+                <i ng-click="toggle(value)" ng-class="{
+                    close: value.collapsed,
+                    open: !value.collapsed}"></i>
+                <span>
+                    <b>{{key}}:</b>
+                </span>
+            </div>
+            <json-tree nodes="value"></json-tree>
+        </div>
+    </li>
+</ul>

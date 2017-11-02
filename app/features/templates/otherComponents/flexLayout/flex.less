@@ -1,0 +1,45 @@
+@import (reference) "../../../../style/theme.less";
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    &.flex-row {
+        flex-direction: row;
+    }
+    &.flex-row-center {
+        flex-direction: row;
+        justify-content: center;
+    }
+    &.flex-row-around {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &.flex-row-center-center {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &.flex-row-around-center {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &.flex-row-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &.flex-column {
+        flex-direction: column;
+    }
+    &.flex-column-center {
+        flex-direction: column;
+        justify-content: center;
+    }
+    &.flex-column-center-center {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

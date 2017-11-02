@@ -1,0 +1,18 @@
+<li class="children__item">
+    <div class="node"
+        ng-init="level = level + 1"
+        ng-class="{'node_active': node.selected}" node-id="{{node.id}}">
+        <div class="node__text" ng-click="select(node)">{{node.name}}</div>
+        <span class="toggle-btn" ng-click="toggle(node, level)"
+            ng-if="node.children && node.children.length">
+            {{!isExpand(node.collapsed, level) ? '+' : '-'}}
+        </span>
+    </div>
+
+    <ol class="children"
+         data-level="{{level}}"
+        ng-if="node.children && node.children.length"
+        ng-show="isExpand(node.collapsed, level)">
+        <mind-node ng-repeat="node in node.children track by $index"></mind-node>
+    </ol>    
+</li>

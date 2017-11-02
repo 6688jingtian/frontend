@@ -1,0 +1,10 @@
+<div class="ui-carousel-wrapper">
+    <div ng-transclude></div>
+    <ul class="ui-carousel-indicator">
+        <li ng-repeat="indicator in slides"
+            ng-class="{'active': activeIndex === $index}"
+            ng-click="onChange($index)"></li>
+    </ul>
+    <ui-icon type="leftcircleo" ng-click="onChange(activeIndex - 1)"></ui-icon>
+    <ui-icon type="rightcircleo" ng-click="onChange(activeIndex + 1)"></ui-icon>
+</div>

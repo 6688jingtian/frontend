@@ -1,0 +1,18 @@
+<script>
+    // you can add methods which's name be better start with '_' to GLOBALSCOPE
+    GLOBALSCOPE._select = function (count) {
+        console.log(arguments);
+        alert(count);
+    };
+</script>
+
+<rating-indicator select="_select"></rating-indicator>
+
+<rating-indicator ng-repeat="item in currentComponent.data"
+    star="item.star"
+    max="item.max"
+    select="_select">
+</rating-indicator>
+
+
+

@@ -1,0 +1,5 @@
+<echart ng-if="isEchart(option.type)"></echart>
+
+<table-chart ng-if="option.type === 3" option="option"></table-chart>
+
+<mindmap ng-if="option.type === 9" data="option"></mindmap>

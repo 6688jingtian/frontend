@@ -1,0 +1,278 @@
+{
+  "status": 0,
+  "message": "success",
+  "result": {
+    "id": 1016,
+    "name": "as",
+    "description": "",
+    "type": 9,
+    "subId": 0,
+    "filters": [
+        {
+            "id": "datetime",
+            "type": "datetime",
+            "name": "日期时间",
+            "data": [
+                {
+                   "id": "from",
+                   "name": "start",
+                   "value": "2016-09-10 14:30:00" 
+                },
+                {
+                   "id": "to",
+                   "name": "end",
+                   "value": "2016-09-20 18:30:00" 
+                }
+            ]
+        }
+    ],
+    "children": [
+      {
+        "id": null,
+        "name": "deployId:9",
+        "description": null,
+        "children": [
+          {
+            "id": null,
+            "name": "qps",
+            "description": null,
+            "children": [
+              {
+                "id": null,
+                "name": "as",
+                "description": null,
+                "children": [
+                  {
+                    "id": null,
+                    "name": "QPS",
+                    "description": null,
+                    "children": [
+                    ],
+                    "remark": null
+                  }
+                ],
+                "remark": {
+                  "upstream_info": {
+                    "deploy_ids": [
+                      "9",
+                      "1"
+                    ],
+                    "module_name": "as",
+                    "product_name": "lu",
+                    "machine_physic_idc": "nj03",
+                    "machine_logic_idc": "nj02",
+                    "dcs_date_time": "2016112403",
+                    "dim": "fail",
+                    "data_name": "QPS"
+                  },
+                  "next_chart_id": -1
+                }
+              }
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj03",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          },
+          {
+            "id": null,
+            "name": "time",
+            "description": null,
+            "children": [
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj03",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          },
+          {
+            "id": null,
+            "name": "fail",
+            "description": null,
+            "children": [
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj03",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          }
+        ],
+        "remark": {
+          "upstream_info": {
+            "deploy_ids": [
+              "9",
+              "1"
+            ],
+            "module_name": "as",
+            "product_name": "lu",
+            "machine_physic_idc": "nj03",
+            "machine_logic_idc": "nj02",
+            "dcs_date_time": "2016112403",
+            "dim": "fail",
+            "data_name": "QPS"
+          },
+          "next_chart_id": -1
+        }
+      },
+      {
+        "id": null,
+        "name": "deployId:1",
+        "description": null,
+        "children": [
+          {
+            "id": null,
+            "name": "qps",
+            "description": null,
+            "children": [
+              {
+                "id": null,
+                "name": "as",
+                "description": null,
+                "children": [
+                  {
+                    "id": null,
+                    "name": "QPS",
+                    "description": null,
+                    "children": [
+                    ],
+                    "remark": null
+                  }
+                ],
+                "remark": {
+                  "upstream_info": {
+                    "deploy_ids": [
+                      "9",
+                      "1"
+                    ],
+                    "module_name": "as",
+                    "product_name": "lu",
+                    "machine_physic_idc": "nj02",
+                    "machine_logic_idc": "nj02",
+                    "dcs_date_time": "2016112403",
+                    "dim": "fail",
+                    "data_name": "QPS"
+                  },
+                  "next_chart_id": -1
+                }
+              }
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj02",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          },
+          {
+            "id": null,
+            "name": "time",
+            "description": null,
+            "children": [
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj02",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          },
+          {
+            "id": null,
+            "name": "fail",
+            "description": null,
+            "children": [
+            ],
+            "remark": {
+              "upstream_info": {
+                "deploy_ids": [
+                  "9",
+                  "1"
+                ],
+                "module_name": "as",
+                "product_name": "lu",
+                "machine_physic_idc": "nj02",
+                "machine_logic_idc": "nj02",
+                "dcs_date_time": "2016112403",
+                "dim": "fail",
+                "data_name": "QPS"
+              },
+              "next_chart_id": -1
+            }
+          }
+        ],
+        "remark": {
+          "upstream_info": {
+            "deploy_ids": [
+              "9",
+              "1"
+            ],
+            "module_name": "as",
+            "product_name": "lu",
+            "machine_physic_idc": "nj02",
+            "machine_logic_idc": "nj02",
+            "dcs_date_time": "2016112403",
+            "dim": "fail",
+            "data_name": "QPS"
+          },
+          "next_chart_id": -1
+        }
+      }
+    ]
+  }
+}

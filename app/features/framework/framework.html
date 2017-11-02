@@ -1,0 +1,68 @@
+<section class="framework-view">
+    <section>
+        <h2>前端脚手架介绍</h2>
+        <p>快速搭建前端单页应用项目</p>
+    </section>
+
+    <section>
+        <h2>特性</h2>
+        <ul>
+            <li>基于Angular, ui-router 单页应用</li>
+            <li>基于模块化开发，按照模块按需加载</li>
+            <li>基于mockserver实现脱离后端独立开发</li>
+            <li>丰富的UI组件支持及常见页面布局UI设计模版</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>开发构建</h2>
+
+        <section class="folder-structure-box">
+            <h4>目录结构</h4>
+            <img src="./img/folder_structure.png">
+            <div>
+                <p>文件夹命名说明:</p>
+                <ul>
+                    <li>
+                        app/directives
+                        <p>可复用组件目录</p>
+                    </li>
+                    <li>
+                        app/features
+                        <p>功能模块目录，主要以page划分模块</p>
+                    </li>
+                    <li>
+                        app/services
+                        <p>公用服务模块目录</p>
+                    </li>
+                    <li>
+                        app/style
+                        <p>基础样式目录，variables.less里定义变量的，可通过修改变量值来定制多套主题</p>
+                    </li>
+                    <li>
+                        app/img
+                        <p>图片目录</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="quick-start">
+            <h4>快速开始</h4>
+            <div>
+                <h5>克隆脚手架项目</h5>
+                <p>git clone ssh://zhangyou04@icode.baidu.com:8235/baidu/frontend/demo</p>
+                <h5>进入项目根目录（与app同级）安装依赖包</h5>
+                <p>npm run installPkgs（只需安装一次）</p>
+                <h5>启动项目</h5>
+                <p>npm run start</p>
+                <h5>运行项目</h5>
+                <p>脚手架: http://localhost:8888</p>
+                <p>组件库: http://localhost:8888/dist</p>
+                <h5>开发热部署模式</h5>
+                <p>脚手架: http://localhost:8886(源码路径 app/);</p>
+                <p>组件库: http://localhost:8887(源码路径: UIComponents/src/)</p>
+            </div>
+        </section>
+    </section>
+</section>

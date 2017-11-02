@@ -1,0 +1,51 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": [
+        {
+            "id": 1,
+            "productId": 1,
+            "name": "风险推广比例",
+            "creator": "wangsheng03",
+            "isValid": 1,
+            "createAt": 1473667626000,
+            "updateAt": 1473667626000
+        },
+        {
+            "id": 2,
+            "productId": 1,
+            "name": "风险推广比例2",
+            "creator": "wangsheng03",
+            "isValid": 1,
+            "createAt": 1473667626000,
+            "updateAt": 1473667626000
+        },
+        {
+            "id": 3,
+            "productId": 1,
+            "name": "风险推广比例3",
+            "creator": "wangsheng03",
+            "isValid": 1,
+            "createAt": 1473667626000,
+            "updateAt": 1473667626000
+        },
+        {
+            "id": 4,
+            "productId": 1,
+            "name": "风险推广比例4",
+            "creator": "wangsheng03",
+            "isValid": 1,
+            "createAt": 1473667626000,
+            "updateAt": 1473667626000
+        },
+        {
+            "id": 5,
+            "productId": 1,
+            "name": "风险看板",
+            "creator": "wangsheng03",
+            "isValid": 1,
+            "createAt": 1473667626000,
+            "updateAt": 1473667626000
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+@import (reference) "../../style/theme.less";
+
+.ui-button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    height: 28px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    position: relative;
+    color: rgba(0,0,0,.65);
+    background-color: @primaryBackgroundColor;
+    border-color: @dividerColor;
+    outline: none;
+
+    &:hover {
+        color: @primaryColor;
+        border-color: @primaryColor;
+    }
+
+    &.selected {
+        position: relative;
+        color: @primaryColor;
+        border-color: @primaryColor;
+
+        &:before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-width: 5px 8px;
+            border-color: transparent @primaryColor @primaryColor transparent;
+            border-style: solid;
+            border-bottom-right-radius: 2px;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            right: 3px;
+            bottom: 0;
+            width: 4px;
+            height: 8px;
+            border-width: 0 1px 1px 0;
+            border-color: #fff;
+            border-style: solid;
+            transform: rotate(40deg);
+        }
+    }
+
+    &[disabled="disabled"],
+    &[disabled="disabled"]:hover {
+        cursor: not-allowed;
+        border-color: @disabledColor;
+        background-color: @disabledColor;
+        &:before {
+            border-color: transparent @disabledColor @disabledColor transparent;
+        }
+    }
+
+    i[type*="loading"] {
+        svg {
+            animation: rotating 1s linear infinite
+        }
+    }
+
+    &.loading {
+        opacity: .65;
+    }
+}
+
+.ui-primary {
+    background-color: @primaryColor;
+    color: @textPrimaryColor;
+    border-color: @primaryColor;
+    &:hover {
+        background-color: @darkPrimaryColor;
+        border-color: @darkPrimaryColor;
+        color: @textPrimaryColor;
+    }
+}
+
+.ui-raised {
+
+}
+
+.ui-button.small {
+    padding: 0 7px;
+    font-size: 12px;
+    border-radius: 4px;
+    height: 22px;
+}
+
+.ui-button.large {
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

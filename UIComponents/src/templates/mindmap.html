@@ -1,0 +1,15 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._selectMindmapNode = function (node, mindmap) {
+        console.log(JSON.stringify(node), arguments );
+    };
+</script>
+
+<h5>单选</h5>
+<mindmap data="currentComponent.data"
+    on-select="_selectMindmapNode"></mindmap>
+
+<h5>多选</h5>
+<mindmap ng-init="data = getComponentData('mindmap', true)"
+    multiple="true"
+    data="data"></mindmap>

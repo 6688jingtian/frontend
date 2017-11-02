@@ -1,0 +1,423 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": {
+        "totalRecords": 26276912,
+        "totalPage": 2627691,
+        "pageNumber": 1,
+        "pageSize": 10,
+        "rows": [
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE7j",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.37.34",
+                    "subsys_product_module": "aladin_parser_57054040.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236305,
+                        "max": 1465236350,
+                        "sum": 2930472655,
+                        "avg": 1465236327.5
+                    },
+                    "proctime": {
+                        "min": 92617,
+                        "max": 343865,
+                        "sum": 436482,
+                        "avg": 218241
+                    },
+                    "select_time": {
+                        "min": 1465236291,
+                        "max": 1465236350,
+                        "sum": 2930472641,
+                        "avg": 1465236320.5
+                    },
+                    "dataid": 819,
+                    "ver": 1465236291,
+                    "udaiclientrainbow_set_time": {
+                        "min": 9231,
+                        "max": 343602,
+                        "sum": 352833,
+                        "avg": 176416.5
+                    },
+                    "siteid": 2010603,
+                    "resid": 819,
+                    "errid": 0,
+                    "count": 2,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE7o",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.37.34",
+                    "subsys_product_module": "aladin_parser_57054040.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236305,
+                        "max": 1465236305,
+                        "sum": 1465236305,
+                        "avg": 1465236305
+                    },
+                    "proctime": {
+                        "min": 131864,
+                        "max": 131864,
+                        "sum": 131864,
+                        "avg": 131864
+                    },
+                    "select_time": {
+                        "min": 146523629,
+                        "max": 146523629,
+                        "sum": 146523629,
+                        "avg": 146523629
+                    },
+                    "dataid": 8189,
+                    "ver": 146523629,
+                    "udaiclientrainbow_set_time": {
+                        "min": 13161,
+                        "max": 13161,
+                        "sum": 13161,
+                        "avg": 13161
+                    },
+                    "siteid": 2010601,
+                    "resid": 8189,
+                    "errid": 0,
+                    "count": 1,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE7t",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.37.34",
+                    "subsys_product_module": "aladin_parser_57054040.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236305,
+                        "max": 1465236305,
+                        "sum": 1465236305,
+                        "avg": 1465236305
+                    },
+                    "proctime": {
+                        "min": 11765013,
+                        "max": 11765013,
+                        "sum": 11765013,
+                        "avg": 11765013
+                    },
+                    "select_time": {
+                        "min": 1465236286,
+                        "max": 1465236286,
+                        "sum": 1465236286,
+                        "avg": 1465236286
+                    },
+                    "dataid": 6999,
+                    "ver": 603391,
+                    "udaiclientrainbow_set_time": {
+                        "min": 1763442,
+                        "max": 1763442,
+                        "sum": 1763442,
+                        "avg": 1763442
+                    },
+                    "siteid": 13031,
+                    "resid": 13031,
+                    "errid": 0,
+                    "count": 1,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE7y",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.36.43",
+                    "subsys_product_module": "aladin_parser_57054037.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236308,
+                        "max": 1465236350,
+                        "sum": 23443778408,
+                        "avg": 1465236150.5
+                    },
+                    "proctime": {
+                        "min": 51598,
+                        "max": 431964,
+                        "sum": 1851252,
+                        "avg": 115703.25
+                    },
+                    "select_time": {
+                        "min": 1465236220,
+                        "max": 1465236286,
+                        "sum": 23443778386,
+                        "avg": 1465236149.125
+                    },
+                    "dataid": 6999,
+                    "ver": 593933,
+                    "udaiclientrainbow_set_time": {
+                        "min": 502,
+                        "max": 430633,
+                        "sum": 1729564,
+                        "avg": 108097.75
+                    },
+                    "siteid": 12193,
+                    "resid": 12193,
+                    "errid": 0,
+                    "count": 16,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE73",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.107.15",
+                    "subsys_product_module": "aladin_parser_57054001.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 146523632,
+                        "max": 1465236350,
+                        "sum": 6593563511,
+                        "avg": 732618167.8888888
+                    },
+                    "proctime": {
+                        "min": 75999,
+                        "max": 388913,
+                        "sum": 1956064,
+                        "avg": 217340.44444444444
+                    },
+                    "select_time": {
+                        "min": 1465236299,
+                        "max": 1465236350,
+                        "sum": 13187127099,
+                        "avg": 1465236344.3333333
+                    },
+                    "dataid": 8191,
+                    "ver": 1465236299,
+                    "udaiclientrainbow_set_time": {
+                        "min": 75737,
+                        "max": 388677,
+                        "sum": 1953843,
+                        "avg": 217093.66666666666
+                    },
+                    "siteid": 2010602,
+                    "resid": 8191,
+                    "errid": 0,
+                    "count": 9,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE78",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.107.15",
+                    "subsys_product_module": "aladin_parser_57054001.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236311,
+                        "max": 1465236311,
+                        "sum": 1465236311,
+                        "avg": 1465236311
+                    },
+                    "proctime": {
+                        "min": 61933,
+                        "max": 61933,
+                        "sum": 61933,
+                        "avg": 61933
+                    },
+                    "select_time": {
+                        "min": 1465236297,
+                        "max": 1465236297,
+                        "sum": 1465236297,
+                        "avg": 1465236297
+                    },
+                    "dataid": 8168,
+                    "ver": 1465236297,
+                    "udaiclientrainbow_set_time": {
+                        "min": 61667,
+                        "max": 61667,
+                        "sum": 61667,
+                        "avg": 61667
+                    },
+                    "siteid": 2010402,
+                    "resid": 8168,
+                    "errid": 0,
+                    "count": 1,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE8D",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.107.15",
+                    "subsys_product_module": "aladin_parser_57054046.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236319,
+                        "max": 1465236350,
+                        "sum": 4395709019,
+                        "avg": 1465236339.6666667
+                    },
+                    "proctime": {
+                        "min": 52332,
+                        "max": 72067,
+                        "sum": 179063,
+                        "avg": 59687.666666666664
+                    },
+                    "select_time": {
+                        "min": 1465236302,
+                        "max": 1465236350,
+                        "sum": 4395709002,
+                        "avg": 1465236334
+                    },
+                    "dataid": 8168,
+                    "ver": 1465236302,
+                    "udaiclientrainbow_set_time": {
+                        "min": 52118,
+                        "max": 71839,
+                        "sum": 178375,
+                        "avg": 59458.333333333336
+                    },
+                    "siteid": 2010402,
+                    "resid": 8168,
+                    "errid": 0,
+                    "count": 3,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE8I",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.107.15",
+                    "subsys_product_module": "aladin_parser_57054046.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 1465236319,
+                        "max": 1465236319,
+                        "sum": 1465236319,
+                        "avg": 1465236319
+                    },
+                    "proctime": {
+                        "min": 58028,
+                        "max": 58028,
+                        "sum": 58028,
+                        "avg": 58028
+                    },
+                    "select_time": {
+                        "min": 1465236301,
+                        "max": 1465236301,
+                        "sum": 1465236301,
+                        "avg": 1465236301
+                    },
+                    "dataid": 8168,
+                    "ver": 1465236301,
+                    "udaiclientrainbow_set_time": {
+                        "min": 57816,
+                        "max": 57816,
+                        "sum": 57816,
+                        "avg": 57816
+                    },
+                    "siteid": 2010402,
+                    "resid": 8168,
+                    "errid": 0,
+                    "count": 1,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE8N",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.44.38",
+                    "subsys_product_module": "aladin_parser_57054003.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 146523632,
+                        "max": 1465236350,
+                        "sum": 19194596211,
+                        "avg": 834547661.3478261
+                    },
+                    "proctime": {
+                        "min": 5503,
+                        "max": 382484,
+                        "sum": 2441276,
+                        "avg": 106142.43478260869
+                    },
+                    "select_time": {
+                        "min": 1465236298,
+                        "max": 1465236350,
+                        "sum": 33700426598,
+                        "avg": 1465235939.0434783
+                    },
+                    "dataid": 8168,
+                    "ver": 1465236298,
+                    "udaiclientrainbow_set_time": {
+                        "min": 5481,
+                        "max": 382258,
+                        "sum": 2622819,
+                        "avg": 114035.60869565218
+                    },
+                    "siteid": 2010402,
+                    "resid": 8168,
+                    "errid": 0,
+                    "count": 23,
+                    "dcs_parse_time": 1465236360
+                }
+            },
+            {
+                "_index": "aladdin-hc_aladdin_msparser-1644-2016060700",
+                "_type": "2016-06-07",
+                "_id": "AVUm5LcEzi6eD9NECE8S",
+                "_score": 1,
+                "_source": {
+                    "casio_ip": "10.86.44.38",
+                    "subsys_product_module": "aladin_parser_57054003.11140462-3197-4a94-acc1-bca5ede36073.jpaas.guid",
+                    "createtime": {
+                        "min": 146523632,
+                        "max": 1465236350,
+                        "sum": 3370043481,
+                        "avg": 674008696.2
+                    },
+                    "proctime": {
+                        "min": 111608,
+                        "max": 382017,
+                        "sum": 1257529,
+                        "avg": 251505.8
+                    },
+                    "select_time": {
+                        "min": 1465236296,
+                        "max": 1465236350,
+                        "sum": 7326181696,
+                        "avg": 1465236339.2
+                    },
+                    "dataid": 6999,
+                    "ver": 2670374,
+                    "udaiclientrainbow_set_time": {
+                        "min": 110523,
+                        "max": 381156,
+                        "sum": 1252462,
+                        "avg": 250492.4
+                    },
+                    "siteid": 16189,
+                    "resid": 16189,
+                    "errid": 0,
+                    "count": 5,
+                    "dcs_parse_time": 1465236360
+                }
+            }
+        ],
+        "aggregations": {}
+    }
+}

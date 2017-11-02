@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    /**
+     * dropdown directive summary
+     * scope {
+     *     data: '=',
+           onChange: '='
+     * }
+     *
+     * attributes {
+     *     name: 'name',
+     *     childrenKey: 'children'
+     * }
+     */
+     
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._onDropdownChange = function (data) {
+        console.log('_onDropdownChange', data, arguments);
+    };
+</script>
+
+<dropdown data="currentComponent.data"
+    on-change="_onDropdownChange"></dropdown>

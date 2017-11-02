@@ -1,0 +1,79 @@
+<section class="template-view">
+    <section class="template-ct" ui-view="templates">
+        <section class="flex-layout">
+            <div class="template-title">
+                <ui-icon type="staro">Flex 布局 简易设置
+            </div>
+            <span>水平排列</span>
+            <section flex flex-align="row">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>水平排列居中</span>
+            <section flex flex-align="row-center">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>水平排列Around</span>
+            <section flex flex-align="row-around">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>水平排列两方向居中</span>
+            <section flex flex-align="row-center-center">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>水平排列Around垂直方向居中</span>
+            <section flex flex-align="row-around-center">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>水平排列换行</span>
+            <section flex flex-align="row-wrap">
+                <div>div1</div>
+                <div>div2</div>
+                <div>div3</div>
+                <div>div4</div>
+            </section>
+            <span>垂直排列</span>
+            <section flex flex-align="column">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>垂直排列居中</span>
+            <section flex flex-align="column-center">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <span>垂直排列两方向居中</span>
+            <section flex flex-align="column-center-center">
+                <div>div1</div>
+                <div>div2</div>
+            </section>
+            <section class="note">
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="10%;">参数</th>
+                                <th width="10%">类型</th>
+                                <th width="70%">说明</th>
+                                <th width="10%">默认值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in ctrl.templateInfo.flexLayout.paramDesc">
+                                <td>{{item.param}}</td>
+                                <td>{{item.type}}</td>
+                                <td>{{item.note}}</td>
+                                <td>{{item.defaultValue}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+        <!-- <section ng-if="ctrl.templateInfo.curType == 'index_template1'">index</section> -->
+    </section>
+</section>

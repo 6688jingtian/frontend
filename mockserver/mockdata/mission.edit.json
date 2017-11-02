@@ -1,0 +1,23 @@
+{
+    "status": 0,
+    "message": "操作成功",
+    "result": [
+        {
+        	"id": 1,
+		    "appId": 1,
+		    "taskTypeId": 12334,
+		    "title": "我是计划名称123123",
+		    "inputConf": "123",
+		    "outputConf": "123",
+		    "exeConf": "123",
+		    "core": 100,
+		    "mem": 20,
+		    "type": 1,
+            "options": {
+                "mem": 20,
+                "type": 1
+            },
+		    "dependency": 123
+        }
+    ]
+}

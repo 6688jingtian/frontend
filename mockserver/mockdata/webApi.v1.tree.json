@@ -1,0 +1,1203 @@
+{
+  "status": 0,
+  "message": "success",
+  "result": [
+    {
+      "id": 333,
+      "name": "fc",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 9,
+      "name": "百度搜索",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 10,
+      "name": "自有媒体",
+      "type": "product",
+      "children": [
+        {
+          "id": 27,
+          "name": "va_app_10_1464775465",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 28,
+          "name": "va_app_10_1464775270",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 804,
+          "name": "va_app_10_1463385198",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 805,
+          "name": "va_app_10_1463385437",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 806,
+          "name": "va_app_10_1463385473",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 807,
+          "name": "va_app_10_1463385513",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 808,
+          "name": "va_app_10_1463385552",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 809,
+          "name": "va_app_10_1463385611",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 810,
+          "name": "va_app_10_1463385664",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 811,
+          "name": "va_app_10_1463385857",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 812,
+          "name": "va_app_10_1463385980",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 813,
+          "name": "va_app_10_1463386001",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 814,
+          "name": "va_app_10_1463386813",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 815,
+          "name": "va_app_10_1463392789",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 816,
+          "name": "va_app_10_1463392934",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 817,
+          "name": "va_app_10_1463396391",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 818,
+          "name": "va_app_10_1463396419",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 819,
+          "name": "va_app_10_1463396457",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 820,
+          "name": "va_app_10_1463396518",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 821,
+          "name": "va_app_10_1463397038",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 822,
+          "name": "va_app_10_1463397350",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 823,
+          "name": "va_app_10_1463397420",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 824,
+          "name": "va_app_10_1463397453",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 825,
+          "name": "va_app_10_1463397976",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 826,
+          "name": "va_app_10_1463398014",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 827,
+          "name": "va_app_10_1463398089",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 828,
+          "name": "va_app_10_1463398296",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 830,
+          "name": "va_app_10_1463718420",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 831,
+          "name": "va_app_10_1463722351",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 832,
+          "name": "va_app_10_1463724370",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 833,
+          "name": "va_app_10_1463726113",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 834,
+          "name": "va_app_10_1463726323",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 835,
+          "name": "va_app_10_1463726440",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1904,
+          "name": "va_app_10_1463970158",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1905,
+          "name": "va_app_10_1463970458",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1906,
+          "name": "va_app_10_1463979619",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1908,
+          "name": "va_app_10_1463984700",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1909,
+          "name": "va_app_10_1463991395",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1910,
+          "name": "va_app_10_1463995184",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1911,
+          "name": "va_app_10_1464058243",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1912,
+          "name": "va_app_10_1464066565",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1913,
+          "name": "va_app_10_1464067260",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 1914,
+          "name": "va_app_10_1464075675",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2001,
+          "name": "va_app_10_1464143402",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2002,
+          "name": "va_app_10_1464144945",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2003,
+          "name": "va_app_10_1464155186",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2004,
+          "name": "va_app_10_1464164557",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2005,
+          "name": "va_app_10_1464164728",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2006,
+          "name": "va_app_10_1464164849",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016002,
+          "name": "va_app_10_1464164989",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016003,
+          "name": "va_app_10_1464165050",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016004,
+          "name": "va_app_10_1464165172",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016005,
+          "name": "va_app_10_1464165520",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016006,
+          "name": "va_app_10_1464165538",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016007,
+          "name": "va_app_10_1464165807",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016008,
+          "name": "va_app_10_1464169492",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016009,
+          "name": "va_app_10_1464315747",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016010,
+          "name": "va_app_10_1464574138",
+          "info": null,
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "name": "monitor",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 4,
+      "name": "aladdin",
+      "type": "product",
+      "children": [
+        {
+          "id": 791,
+          "name": "hc_aladdin",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 79,
+          "name": "hc_aladdin_parser",
+          "info": "meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 81,
+          "name": "hc_aladdin_msparser",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 84,
+          "name": "new-meta-name_427_2016_14_36",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 80,
+          "name": "hc_aladdin_parser",
+          "info": "meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 1902,
+          "name": "hc_aladdin_parser",
+          "info": "first_meta",
+          "type": "meta"
+        },
+        {
+          "id": 1903,
+          "name": "hc_aladdin_msparser",
+          "info": "second_meta",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "百度理财",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 3216732167,
+      "name": "3216732167",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 1027,
+      "name": "1027",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 1,
+      "name": "手机百度",
+      "type": "product",
+      "children": [
+        {
+          "id": 25,
+          "name": "xinyong_xinyu",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 26,
+          "name": "fc_data",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 117,
+          "name": "test",
+          "info": "new-meta-info",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 998998,
+      "name": "1023",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 2438,
+      "name": "2438",
+      "type": "product",
+      "children": [
+        {
+          "id": 122,
+          "name": "ms",
+          "info": "3",
+          "type": "meta"
+        },
+        {
+          "id": 123,
+          "name": "sggdjgsggsGGGGG",
+          "info": "",
+          "type": "meta"
+        },
+        {
+          "id": 792,
+          "name": "aladin",
+          "info": "阿拉丁测试存储表",
+          "type": "meta"
+        },
+        {
+          "id": 794,
+          "name": "testtt",
+          "info": "3",
+          "type": "meta"
+        },
+        {
+          "id": 795,
+          "name": "aladdin",
+          "info": "阿拉丁测试",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 2641,
+      "name": "2641",
+      "type": "product",
+      "children": [
+        {
+          "id": 125,
+          "name": "数据流存储1",
+          "info": "",
+          "type": "meta"
+        },
+        {
+          "id": 793,
+          "name": "test1",
+          "info": "我是个测试",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "凤巢推广",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 1459,
+      "name": "1459",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 5,
+      "name": "va",
+      "type": "product",
+      "children": [
+        {
+          "id": 27,
+          "name": "risk_medical",
+          "info": "医疗夸大",
+          "type": "meta"
+        },
+        {
+          "id": 28,
+          "name": "risk_ad",
+          "info": "30%",
+          "type": "meta"
+        },
+        {
+          "id": 29,
+          "name": "risk_v_user",
+          "info": "用户信用",
+          "type": "meta"
+        },
+        {
+          "id": 30,
+          "name": "risk_v_pv",
+          "info": "pv信用",
+          "type": "meta"
+        },
+        {
+          "id": 32,
+          "name": "searchid_stat_file_pc",
+          "info": "searchid在某个cmatch下（满足条件page_no <= 1），对应的广告信息",
+          "type": "meta"
+        },
+        {
+          "id": 36,
+          "name": "lice_icp",
+          "info": "医疗行业全量资质文件",
+          "type": "meta"
+        },
+        {
+          "id": 35,
+          "name": "vulgar",
+          "info": "低俗",
+          "type": "meta"
+        },
+        {
+          "id": 34,
+          "name": "xinyong_xinyu",
+          "info": "信用信誉",
+          "type": "meta"
+        },
+        {
+          "id": 801,
+          "name": "eris_original_data",
+          "info": "厄里斯原始日志",
+          "type": "meta"
+        },
+        {
+          "id": 802,
+          "name": "va_erised_output",
+          "info": "VA 用户画像输出数据",
+          "type": "meta"
+        },
+        {
+          "id": 1907,
+          "name": "risk_manage",
+          "info": "风险控制",
+          "type": "meta"
+        },
+        {
+          "id": 2000,
+          "name": "eris_original_data",
+          "info": "厄里斯原始日志,单量数据源",
+          "type": "meta"
+        },
+        {
+          "id": 33,
+          "name": "searchid_stat_file_wise",
+          "info": "searchid在某个cmatch下（满足条件page_no <= 1），对应的广告信息",
+          "type": "meta"
+        },
+        {
+          "id": 40,
+          "name": "risk_test",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 37,
+          "name": "exaggerate_pc",
+          "info": "夸大",
+          "type": "meta"
+        },
+        {
+          "id": 38,
+          "name": "exaggerate_wise",
+          "info": "夸大",
+          "type": "meta"
+        },
+        {
+          "id": 39,
+          "name": "rank_stat_pc",
+          "info": "userid在不同广告位（满足条件page_no <= 1，in_page_rank <= 3）的展现/点击/消费统计",
+          "type": "meta"
+        },
+        {
+          "id": 41,
+          "name": "rank_stat_wise",
+          "info": "userid在不同广告位（满足条件page_no <= 1，in_page_rank <= 3）的展现/点击/消费统计",
+          "type": "meta"
+        },
+        {
+          "id": 31,
+          "name": "risk_ad_rate",
+          "info": "search纬度，商业推广30%指标数据",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "百度地图",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 6,
+      "name": "百度糯米",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 3,
+      "name": "乐播",
+      "type": "product",
+      "children": [
+        {
+          "id": 85,
+          "name": "haichuan_test_meta_0502",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 82,
+          "name": "new-meta-name_427_2016_13_19",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 83,
+          "name": "new-meta-name_427_2016_14_24",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 88,
+          "name": "haichuan_test_meta_05_05",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 86,
+          "name": "haichuan_test_meta_0503",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 87,
+          "name": "aladdin-hc_aladdin_parser-1632",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 89,
+          "name": "haichuan_5_5_2016",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 90,
+          "name": "haichuan_add_minfos_5_5",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 91,
+          "name": "haichuan_add_minfos_5_5_20_43",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 92,
+          "name": "haichuan_add_minfos_5_5_21_19",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 93,
+          "name": "test_a_b_c",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 94,
+          "name": "test",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 95,
+          "name": "hc_va",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 96,
+          "name": "haichuan_add_minfos_5_5_23_06",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 97,
+          "name": "haichuan_add_minfos_5_6_10_49",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 98,
+          "name": "haichuan_test_0506_14_22_ESUDW",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 100,
+          "name": "haichuan_test_0506_14_22_localHdfs",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 101,
+          "name": "haichuan_test_0506_14_22_localFile",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 103,
+          "name": "haichuan_test_0506_20_30_ESUDW",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 104,
+          "name": "haichuan_test_0506_20_30_localHdfs",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 105,
+          "name": "haichuan_test_0506_22_39_localHdfs",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 106,
+          "name": "haichuan_test_0506_14_22_localFile",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 108,
+          "name": "test1462636277",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 109,
+          "name": "test",
+          "info": "5",
+          "type": "meta"
+        },
+        {
+          "id": 110,
+          "name": "test",
+          "info": "5",
+          "type": "meta"
+        },
+        {
+          "id": 111,
+          "name": "test_5_9",
+          "info": "test",
+          "type": "meta"
+        },
+        {
+          "id": 112,
+          "name": "tes_5_9",
+          "info": "for test",
+          "type": "meta"
+        },
+        {
+          "id": 116,
+          "name": "test",
+          "info": "5",
+          "type": "meta"
+        },
+        {
+          "id": 118,
+          "name": "1",
+          "info": "1",
+          "type": "meta"
+        },
+        {
+          "id": 121,
+          "name": "ms",
+          "info": "34",
+          "type": "meta"
+        },
+        {
+          "id": 796,
+          "name": "haichuan_test_0515_ESUDW",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 797,
+          "name": "local",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 798,
+          "name": "va_app_3",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 799,
+          "name": "va_app_3_1463312726",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 800,
+          "name": "va_app_3_1463312762",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 803,
+          "name": "va_app_3_1463369693",
+          "info": null,
+          "type": "meta"
+        },
+        {
+          "id": 2016012,
+          "name": "test1464604985",
+          "info": "tst",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "百度视频",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 8,
+      "name": "百度新闻",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 14,
+      "name": "百度Hi",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 15,
+      "name": "诚信",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 16,
+      "name": "未来商店",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 17,
+      "name": "百度外卖",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 18,
+      "name": "DuWear",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 19,
+      "name": "闪投",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 20,
+      "name": "商业知心",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 21,
+      "name": "多模搜索",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 22,
+      "name": "程序化交易",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 23,
+      "name": "百度有钱",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 25,
+      "name": "LBS开放平台",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 26,
+      "name": "hao123",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 27,
+      "name": "百度医生",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 28,
+      "name": "宝宝知道",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 29,
+      "name": "百度地图-用车",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 30,
+      "name": "百度手机助手",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 31,
+      "name": "百度商桥",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 32,
+      "name": "安卓优化大师",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 33,
+      "name": "百度翻译",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 34,
+      "name": "药直达",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 35,
+      "name": "百度权益",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 36,
+      "name": "百度商城",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 37,
+      "name": "贴吧",
+      "type": "product",
+      "children": [
+        {
+          "id": 114,
+          "name": "haichuan_test_0510_12_01_ESUDW",
+          "info": "new-meta-info",
+          "type": "meta"
+        },
+        {
+          "id": 115,
+          "name": "haichuan_test_0510_12_01_ESUDW",
+          "info": "new-meta-info",
+          "type": "meta"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "百度阅读",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 40,
+      "name": "百度影音",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 46,
+      "name": "百度图片",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 47,
+      "name": "百度魔图",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 48,
+      "name": "信用卡还款",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 58,
+      "name": "百度钱包",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 59,
+      "name": "百度糯米电影",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 60,
+      "name": "日文输入法",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 61,
+      "name": "点心省电",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 62,
+      "name": "IDL",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 63,
+      "name": "股市通",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 65,
+      "name": "度秘",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 66,
+      "name": "百度开放云",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 67,
+      "name": "百度语音",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 68,
+      "name": "品专",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 69,
+      "name": "DU Battery Saver",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 70,
+      "name": "百度学术",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 71,
+      "name": "百度文库",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 72,
+      "name": "百度Passport",
+      "type": "product",
+      "children": []
+    },
+    {
+      "id": 73,
+      "name": "chengxin",
+      "type": "product",
+      "children": [
+        {
+          "id": 99,
+          "name": "hc_chengxin_parser",
+          "info": "tst",
+          "type": "meta"
+        },
+        {
+          "id": 2016014,
+          "name": "va_app_10_1464659872",
+          "info": null,
+          "type": "meta"
+        }
+      ]
+    }
+  ]
+}

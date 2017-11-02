@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf8">
+        <title>Components Test</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="icon" href="/img/index/ep_logo_y.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/img/index/ep_logo_y.png" type="image/x-icon" />
+        <link rel="stylesheet" href="vendor/codemirror/codemirror-all.min.css"/>
+        <% for (var path in htmlWebpackPlugin.options.css) { %>
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.css[path] %>" />
+        <% } %>
+    </head>
+    <body ng-app="test" ng-controller="index" ng-cloak>
+        <layout direction="horizontal" resizable="true" height="100%">
+            <layout-left width="200">
+                <treeview class="ui-tree-menu" data="components"
+                    draggable="true"
+                    on-select="selectCommponentItem"></treeview>
+            </layout-left>
+            <layout-right>
+                <div class="component-content">
+                    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+                        <div ng-if="isCurrentComponent('<%= chunk%>')"
+                            ng-init="componentInfo = getComponentById('<%= chunk%>')">
+                            <h3>
+                                {{componentInfo.name}}
+                                <span ng-bind="componentInfo.subName"></span>
+                            </h3>
+                            <section>
+                                <p ng-bind="componentInfo.description"></p>
+                            </section>
+
+                            <section>
+                                <h4>示例演示<ui-icon type="edit" placement="top" ng-click="showSourceCode(currentComponent)"></ui-icon></h4>
+                                <div compile="componentTpls.<%= chunk%>"  class="<%= chunk + '-section'%>"></div>
+                            </section>
+
+                            <div class="edit-container" ng-if="currentComponent.isShowSourceCode">
+                                <ui-button class="ui-primary" ng-click="onApply()">Apply</ui-button>
+                                <!-- <pre id="applyData" contenteditable="true">{{getPrettyJson(currentComponent)}}</pre> -->
+                                <tabset>
+                                    <tab head="HTML" select="selectTab('html')">
+                                        <textarea cm-editor
+                                            ng-if="tabsActive.html"
+                                            editor="htmlEditor"
+                                            option="htmlEditorOption"
+                                            ng-model="copyComponentTpls[currentComponent.id]"></textarea>
+
+                                    </tab>
+                                    <tab head="DATA" select="selectTab('data')">
+                                        <textarea cm-editor
+                                            ng-if="tabsActive.data"
+                                            editor="editor"
+                                            option="editorOption"
+                                            ng-model="editor.value"></textarea>
+                                    </tab>
+                                </tabset>
+                            </div>
+                            <section>
+                                <h4>API</h4>
+                                <div class="<%= chunk + '-api-section'%>">
+                                    <div ng-if="currentComponent.api.length" ng-repeat="api in currentComponent.api track by $index">
+                                        <h6 ng-bind="api.name"></h6>
+                                        <ui-table cols="apiTableCols"
+                                            rows="api.params"
+                                            fixed-header="false"
+                                            with-border="true"></ui-table>
+                                    </div>
+                                    <ui-table ng-if="!currentComponent.api.length"
+                                        cols="apiTableCols"
+                                        rows="currentComponent.api.params"
+                                        fixed-header="false"
+                                        with-border="true"></ui-table>
+                                </div>
+                            </section>
+                        </div>
+                    <% } %>
+
+                    <div ng-if="!isCurrentComponent('UIComponents')" ng-show="false">
+                        <a href="directives/{{currentComponent.id}}.js"
+                            download="{{currentComponent.id}}.js">download</a>
+                        <a href="directives/{{currentComponent.id}}.min.js"
+                           download="{{currentComponent.id}}.min.js">download(min)</a>
+                        <a href="directives/{{currentComponent.id}}.js"
+                            target="_blank">view file</a>
+                    </div>
+                    <div ng-if="isCurrentComponent('UIComponents')" compile="componentTpls.uiComponents"></div>
+
+                </div>
+            </layout-right>
+        </layout>
+        <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="vendor/echarts/echarts.min.js"></script>
+        <script type="text/javascript" src="vendor/codemirror/codemirror-all.min.js"></script>
+        <script type="text/javascript" src="vendor/ZeroClipboard.min.js"></script>
+        <script type="text/javascript" src="vendor/Blob.js"></script>
+        <script type="text/javascript" src="vendor/FileSaver.js"></script>
+        <script type="text/javascript" src="vendor/d3/d3-3.5.7.min.js"></script>
+        <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <% if (['../index'].indexOf(chunk) > -1) {%>
+        <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <%}%>
+        <% } %>
+        <% if (htmlWebpackPlugin.options.window) { %>
+        <script>
+            <% for (var varName in htmlWebpackPlugin.options.window) { %>
+            window['<%=varName%>'] = <%= JSON.stringify(htmlWebpackPlugin.options.window[varName]) %>;
+            <% } %>
+        </script>
+        <% } %>
+        <% if (htmlWebpackPlugin.options.devServer) { %>
+        <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
+        <% } %>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "status": 0,
+    "message": "ok",
+    "success": true,
+    "data": [
+        {
+            "ip": "10.94.222.143",
+            "httpPort": 8188,
+            "streamPort": 8388,
+            "proxyPort": 8989,
+            "webSocket": 74,
+            "adbProxy": 0,
+            "freeMem": 7088638744,
+            "totalMem": 8251244544,
+            "maxMem": 10379853824
+        },
+        {
+            "ip": "10.99.218.166",
+            "httpPort": 8188,
+            "streamPort": 8388,
+            "proxyPort": 8989,
+            "webSocket": 73,
+            "adbProxy": 0,
+            "freeMem": 3108732792,
+            "totalMem": 3944218624,
+            "maxMem": 8232370176
+        }
+    ]
+}

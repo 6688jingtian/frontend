@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    /**
+     * button directive summary
+     */
+
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._clickHandle = function (msg) {
+        alert(msg);
+    };
+</script>
+
+<ui-radio-group ng-model="currentComponent.data.size">
+    <ui-radio-button ng-repeat="size in currentComponent.data.sizes track by $index"
+        ng-value="size">{{size}}</ui-radio-button>
+</ui-radio-group>
+
+<ui-button size="{{currentComponent.data.size}}" ng-click="_clickHandle('Hello button')">Default</ui-button>
+<ui-button size="{{currentComponent.data.size}}" class="ui-primary" ng-click="_clickHandle('Primary')">Primary</ui-button>
+<ui-button size="{{currentComponent.data.size}}" class="ui-primary" ng-click="_clickHandle('Search')">
+    <ui-icon type="search1"></ui-icon>
+    Search
+</ui-button>
+<ui-button size="{{currentComponent.data.size}}" class="ui-primary" ng-click="_clickHandle('download')">
+    <ui-icon type="download"></ui-icon>
+    download
+</ui-button>
+<ui-button size="{{currentComponent.data.size}}" class="ui-primary" ng-click="_clickHandle('back')">
+    <ui-icon type="left"></ui-icon>
+    back
+</ui-button>
+<ui-button size="{{currentComponent.data.size}}" class="ui-primary" ng-click="_clickHandle('forward')">
+    forward
+    <ui-icon type="right"></ui-icon>
+</ui-button>
+<ui-button size="{{currentComponent.data.size}}" loading="true" class="ui-primary" ng-click="_clickHandle('loading2')">
+    <ui-icon type="loading2"></ui-icon>
+    loading
+</ui-button>

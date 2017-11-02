@@ -1,0 +1,422 @@
+@darkPrimaryColor:   #388E3C;
+@primaryColor:       #558b2f;
+@lightPrimaryColor:  #C8E6C9;
+@negativeColor:      #e24949;
+@disabledColor:    #e2e2e2;
+@accentColor:        #4CAF50;
+#212121:   #212121;
+@textPrimaryColor:   #FFFFFF;
+@secondaryTextColor: #757575;
+@dividerColor:       #BDBDBD;
+@primaryBackgroundColor: #FFFFFF;
+@secondaryBackgroundColor: #F8F8F8;
+
+[theme="green"] {
+    /* tree */
+    .ui-tree {
+        .node-item {
+            .ui-tree-switcher:after {
+                border-color: transparent transparent transparent #212121;
+            }
+
+            &.selected > .node-info .node-name {
+                background: @primaryColor;
+                color: @textPrimaryColor;
+            }
+
+            &:not(.selected) > .node-info .node-name:hover {
+                color: @primaryColor;
+            }
+        }
+
+        .custom-checkbox {
+            border: 1px solid @dividerColor;
+            &:hover {
+                border-color: @primaryColor;
+            }
+
+            &.checked:after,
+            &.checked-part:after {
+                border-right: 2px solid @primaryColor;
+                border-bottom: 2px solid @primaryColor;
+            }
+
+            &.checked-part {
+                background: @secondaryBackgroundColor;
+            }
+        }
+
+        .node-info {
+            &.insert-in {
+                background: @darkPrimaryColor;
+            }
+
+            &.insert-before {
+                border-top: 1px solid @primaryColor;
+            }
+
+            &.insert-after {
+                border-bottom: 1px solid @primaryColor;
+            }
+        }
+
+        .insert-arrow {
+            border-top: 2px solid @darkPrimaryColor;
+            border-right: 2px solid @darkPrimaryColor;
+        }
+    }
+
+    .ui-tree.ui-tree-menu {
+        .node-item {
+            &.selected {
+                &> .node-info {
+                    background: @lightPrimaryColor;
+                    color: @darkPrimaryColor;
+                    .node-name {
+                        color: @darkPrimaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .ui-tree.ui-tree-show-line {
+        .node-item {
+            .node-info {
+                &> .ui-tree-switcher {
+                    border: 1px solid @dividerColor;
+                    &:before,
+                    &:after {
+                        background: @dividerColor;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    /* table */
+    .grid-container {
+        &.selection-transparent {
+            ::selection {
+                background: transparent;
+            }
+        }
+
+        .grid-content {
+            .grid-header {
+                background: @secondaryBackgroundColor;
+                th {
+                    .col-header {
+                        i {
+                            color: @secondaryTextColor;
+                            &.active {
+                                color: @primaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        table {
+            tr {
+                &.active {
+                    td {
+                        background-color: @secondaryBackgroundColor;
+                    }
+                }
+            }
+        }
+
+        .columns-selection {
+            border: 1px solid @dividerColor;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.172549);
+            background: #f2f2f2;
+        }
+
+        .column-menus {
+            border: 1px solid @dividerColor;
+            background: #f2f2f2;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.172549);
+            li {
+                input {
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        &.ui-table-col-resizable {
+            .col-resizer {
+                &:hover, &.dragging {
+                    background: @primaryColor;
+                }
+            }
+        }
+    }
+
+    .grid-border table tr {
+        border-bottom: 1px solid @dividerColor;
+    }
+
+    .ui-table-bordered {
+        border-bottom: 1px solid @dividerColor;
+
+        table {
+            border: 1px solid @dividerColor;
+            td,th {
+                border-right: 1px solid @dividerColor;
+            }
+        }
+    }
+
+
+    /* button */
+    .ui-button {
+        background-color: @primaryBackgroundColor;
+        border-color: @dividerColor;
+
+        &:hover {
+            color: @primaryColor;
+            border-color: @primaryColor;
+        }
+
+        &.selected {
+            color: @primaryColor;
+            border-color: @primaryColor;
+
+            &:before {
+                border-color: transparent @primaryColor @primaryColor transparent;
+            }
+
+            &:after {
+                border-color: #fff;
+            }
+        }
+
+        &[disabled="disabled"],
+        &[disabled="disabled"]:hover {
+            border-color: @disabledColor;
+            background-color: @disabledColor;
+            &:before {
+                border-color: transparent @disabledColor @disabledColor transparent;
+            }
+        }
+    }
+
+    .ui-primary {
+        background-color: @primaryColor;
+        color: @textPrimaryColor;
+        border-color: @primaryColor;
+        &:hover {
+            background-color: @darkPrimaryColor;
+            border-color: @darkPrimaryColor;
+            color: @textPrimaryColor;
+        }
+    }
+
+
+    /* switch */
+    .ui-switch {
+        border: 1px solid @dividerColor;
+
+        &:after {
+            background-color: @primaryBackgroundColor;
+        }
+
+        .ui-switch-inner {
+            color: @primaryBackgroundColor;
+        }
+
+        &.ui-switch-on {
+            border-color: @primaryColor;
+            background-color: @primaryColor;
+        }
+    }
+
+
+
+    /* radio button*/
+    .ui-radio-wrapper {
+        .ui-radio-inner {
+            border: 1px solid @dividerColor;
+            background-color: @primaryBackgroundColor;
+
+            &:after {
+                background-color: @primaryColor;
+            }
+        }
+
+        .ui-radio-checked {
+            .ui-radio-inner {
+                border-color: @primaryColor;
+            }
+        }
+
+        &[disabled="disabled"] {
+            color: #d9d9d9;
+            border-color: #d9d9d9;
+            .ui-radio-inner {
+                border-color: #d9d9d9 !important;
+                background-color: #f7f7f7;
+                &:after {
+                    background-color: #d9d9d9;
+                }
+            }
+        }
+    }
+
+    .ui-radio-button {
+        border: 1px solid @dividerColor;
+        border-left: 0;
+        background: #fff;
+
+        &.ui-radio-wrapper-checked {
+            background: @primaryBackgroundColor;
+            border-color: @primaryColor;
+            color: @primaryColor;
+            box-shadow: -1px 0 0 0 @primaryColor;
+            &[disabled="disabled"] {
+                color: #fff;
+                background-color: #e6e6e6;
+                border-color: #d9d9d9;
+            }
+        }
+
+        &:not([disabled="disabled"]):hover {
+            color: @primaryColor;
+        }
+
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+            border-left: 1px solid @dividerColor;
+        }
+    }
+
+
+    /* checkbox */
+    .ui-checkbox-wrapper {
+        .ui-checkbox {
+            .ui-checkbox-inner {
+                border: 1px solid @dividerColor;=
+            background-color: @primaryBackgroundColor;
+
+                &:after {
+                    border: 2px solid @primaryBackgroundColor;
+                    border-top: 0;
+                    border-left: 0;
+                }
+            }
+
+            &.ui-checkbox-indeterminate {
+                .ui-checkbox-inner {
+                    background: @primaryColor;
+                    border-color: @primaryColor;
+                    &:after {
+                        border-color: @primaryBackgroundColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .ui-checkbox-button {
+        border: 1px solid @dividerColor;
+
+        &:hover {
+            border-color: @primaryColor;
+            color: @primaryColor;
+        }
+    }
+
+    .ui-checkbox-wrapper-checked {
+        .ui-checkbox {
+            .ui-checkbox-inner {
+                background-color: @primaryColor;
+                border-color: @primaryColor;
+            }
+        }
+    }
+
+    .ui-checkbox-button.ui-checkbox-wrapper-checked {
+        border-color: @primaryColor;
+        &:before {
+            border-color: transparent @primaryColor @primaryColor transparent;
+        }
+        &:after {
+            border-color: @primaryBackgroundColor;
+        }
+    }
+
+    /* tabset */
+    .ui-tabset-header {
+        background: @secondaryBackgroundColor;
+        border-bottom: 1px solid #d9d9d9;
+        &> li {
+            &.active {
+                border-bottom: 2px solid @primaryColor;
+                color: @primaryColor;
+            }
+        }
+        a {
+            color: @primaryColor;
+        }
+    }
+
+
+
+
+
+    /* dropdown list */
+    .dropdown-list {
+        .menu-btn {
+            border: 1px solid @dividerColor;
+            &:after {
+                border-color: transparent transparent #000 #000;
+            }
+        }
+    }
+
+    .dropdown-list .dropdown-menu,
+    .dropdown-submenu {
+        border: 1px solid @dividerColor;
+        background: #fff;
+    }
+
+    .dropdown-list li:hover,
+    .dropdown-submenu li:hover {
+        background-color: @lightPrimaryColor;
+    }
+
+    .dropdown-list li.selected,
+    .dropdown-submenu li.selected {
+        background: @primaryColor;
+        color: #fff;
+    }
+
+    .dropdown-list li.selected:before,
+    .dropdown-submenu li.selected:before {
+        border-color: #fff;
+    }
+
+    .dropdown-list li.disabled,
+    .dropdown-submenu li.disabled {
+        color: lightgray;
+    }
+
+    .child-selected {
+        background-color: @primaryColor;
+    }
+
+    .sub-menu-icon:after {
+        border-color: @dividerColor;
+    }
+
+    .sub-menu-icon.selected:after {
+        border-color: @dividerColor;
+    }
+}

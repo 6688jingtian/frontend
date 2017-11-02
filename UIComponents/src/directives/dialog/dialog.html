@@ -1,0 +1,13 @@
+<div class="ui-dialog-container" ng-show="option.visible">
+    <div class="ui-dialog">
+        <div class="ui-dialog-header">
+            <h3>{{option.title}}</h3>
+        </div>
+        <div class="ui-dialog-body" ng-transclude></div>
+        <div class="ui-dialog-footer">
+            <ui-button ng-click="cancelHandle()">{{option.cancelText || '取消'}}</ui-button>
+            <ui-button class="ui-primary" ng-click="okHandle()">{{option.okText || '确定'}}</ui-button>
+        </div>
+    </div>
+    <div class="ui-dialog-mask"></div>
+</div>

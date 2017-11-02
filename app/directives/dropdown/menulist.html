@@ -1,0 +1,11 @@
+<ul class="dropdown-menu dropdown-submenu"
+    ng-style="menuStyle"
+    ng-mouseover="mouseoverOnMenu($event, level)">
+  	<li ng-repeat="item in items track by $index"
+  		ng-mouseover="mouseoverHandle(item, $event, level)"
+  		ng-click="selectItem(item, level)"
+  		ng-mouseout="mouseoutHandle(item, $event, level)"
+  		ng-class="{'sub-menu-icon': item[childrenKey].length > 0, 'selected': isSelected(item), 'child-selected': isChildSelected(item), disabled: isDisabled(item)}">
+        {{item[name]}}
+    </li>
+</ul>

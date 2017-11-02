@@ -1,0 +1,12 @@
+<ui-radio-group ng-model="currentComponent.colorfull">
+    <ui-radio-button>图一</ui-radio-button>
+    <ui-radio-button ng-value="true">图二</ui-radio-button>
+</ui-radio-group>
+
+<directed-graph ng-if="!currentComponent.colorfull"
+    height="{{currentComponent.data[0].height}}"
+    option="currentComponent.data[0]"></directed-graph>
+
+<directed-graph ng-if="currentComponent.colorfull"
+    height="{{currentComponent.data[1].height}}"
+    option="currentComponent.data[1]"></directed-graph>

@@ -1,0 +1,41 @@
+@import (reference) "../../style/theme.less";
+
+.ui-box {
+
+    .close {
+        display: inline-block;
+        border: 5px solid transparent;
+        border-left: 8px solid #aaa;
+        border-right: none;
+    }
+
+    .open {
+        display: inline-block;
+        border: 5px solid transparent;
+        border-top: 8px solid #aaa;
+        border-bottom: none;
+    }
+
+    .list-key-box {
+        padding-left: 15px;
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 0;
+        list-style-type: none;
+
+        li {
+            margin-top: 1px;
+            padding-left: 15px;
+
+            .collapsed {
+                display: none;
+            }
+
+            .expanded {
+                display: block;
+            }
+        }
+    }
+}

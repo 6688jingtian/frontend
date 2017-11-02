@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="app">
+    <head>
+        <meta charset="utf8">
+        <title>EP-前端基础建设</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!-- <link rel="icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" /> -->
+        <% for (var path in htmlWebpackPlugin.options.css) { %>
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.css[path] %>" />
+        <% } %>
+    </head>
+    <body ng-class="{
+        'index-wrapper': isIndexView,
+        'components-wrapper': isComponentsView}">
+        <header ui-view="header"></header>
+        <section ui-view="content" class="main-content"></section>
+        <footer ui-view="footer" class="footer"></footer>
+        <!-- global loading -->
+        <div class="loading" ng-show="showLoading">
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </div>
+
+        <% if (htmlWebpackPlugin.options.window) { %>
+        <script>
+            <% for (var varName in htmlWebpackPlugin.options.window) { %>
+              window['<%=varName%>'] = <%= JSON.stringify(htmlWebpackPlugin.options.window[varName]) %>;
+            <% } %>
+        </script>
+        <% } %>
+        <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+        <% if (htmlWebpackPlugin.options.devServer) { %>
+        <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
+        <% } %>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<div class="grid-container ui-table-size-{{size}}"
+    ng-class="{
+        'table-layout-fixed': fixColWidth,
+        'ui-table-bordered': withBorder,
+        'ui-fixed-header': fixedHeader,
+        'ui-table-col-resizable': colResizable,
+        'selection-transparent': resizerDown
+    }">
+    <i ng-if="!!columnsSelection" class="sort-desc-icon" ng-click="toggleColumnSelection()"></i>
+    <ul ng-if="showColumnsSelection" class="columns-selection">
+        <li ng-repeat="col in cols">
+            <label>
+                <input type="checkbox"
+                    ng-model="col.$unchecked"
+                    ng-true-value="false"
+                    ng-false-value="true"
+                    ng-change="toggleChecked(col)">
+                {{col.name}}
+            </label>
+        </li>
+    </ul>
+    <div class="grid-content grid-border">
+        <div class="grid-header" ng-if="fixedHeader">
+            <table>
+                <thead>
+                    <tr>
+                        <th ng-repeat="col in cols" ng-hide="col.$unchecked" ng-init="initCols(col, $index)">
+                            <div class="col-header">
+                                <span class="col-name">
+                                    {{col.name}}
+                                    <span class="ui-col-sorter">
+                                        <ui-icon type="caretdown" ng-class="{active: col.sortOrder === 'asc'}"
+                                            ng-click="onSort('asc', col, $index)"></ui-icon>
+                                        <ui-icon type="caretup" ng-class="{active: col.sortOrder === 'desc'}"
+                                            ng-click="onSort('desc', col, $index)"></ui-icon>
+                                    </span>
+                                    <ui-icon type="filter" ng-class="{active: col.filterValue}"
+                                        ng-click="openFilterMenu(col, $index, $event)"></ui-icon>
+                                </span>
+                            </div>
+                            <div class="col-resizer"
+                                ng-if="$index !== cols.length - 1"
+                                ng-style="resizerStyle"
+                                ng-mousedown="resizeMovedown($index, $event)"></div>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="grid-body" ng-style="bodyStyle">
+            <table>
+                <thead ng-if="!fixedHeader" class="grid-header">
+                    <tr>
+                        <th ng-repeat="col in cols" ng-hide="col.$unchecked" ng-init="initCols(col, $index)">
+                            <div class="col-header" ng-click="openColumnMenu(col, $index, $event)">
+                                  <span class="col-name">
+                                    {{col.name}}
+                                    <span class="ui-col-sorter">
+                                        <ui-icon type="caretdown" ng-class="{active: col.sortOrder === 'asc'}"
+                                                 ng-click="onSort('asc', col, $index)"></ui-icon>
+                                        <ui-icon type="caretup" ng-class="{active: col.sortOrder === 'desc'}"
+                                                 ng-click="onSort('desc', col, $index)"></ui-icon>
+                                    </span>
+                                    <ui-icon type="filter" ng-class="{active: col.filterValue}"
+                                             ng-click="openFilterMenu(col, $index, $event)"></ui-icon>
+                                </span>
+                            </div>
+                            <div class="col-resizer"
+                                 ng-if="$index !== cols.length - 1"
+                                 ng-style="resizerStyle"
+                                 ng-mousedown="resizeMovedown($index, $event)"></div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="invisible-row" ng-if="colResizable">
+                        <th ng-repeat="col in cols" ng-hide="col.$unchecked"></th>
+                    </tr>
+                    <tr ng-repeat="row in rows" ng-init="initRows(row, $index)"
+                        ng-hide="row.$invisible"
+                        ng-click="onSelectRow(row)"
+                        ng-class="{active: selectedRow === row}">
+                        <td ng-repeat="col in cols" ng-hide="col.$unchecked">
+                            <div ng-if="!!col.template" cell-compile="col.template" col="col" row="row"></div>
+                            <div ng-if="!col.template"
+                                 title="{{col.formatter ? col.formatter(row[col.key], row) : row[col.key]}}">
+                                {{col.formatter ? col.formatter(row[col.key], row) : row[col.key]}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <ul class="column-menus" ng-style="columnMenusStyle">
+        <!--<li ng-click="onSort('asc')">-->
+            <!--<i class="sort-asc-icon"></i>升序排序-->
+        <!--</li>-->
+        <!--<li ng-click="onSort('desc')">-->
+            <!--<i class="sort-desc-icon"></i>降序排序-->
+        <!--</li>-->
+        <li menu="filter">
+            <i class="filter-icon"></i>
+            <label>过滤</label>
+            <ui-search-field value="currentCol.filterValue"
+                search="doFilter"
+                on-clear="doFilter"></ui-search-field>
+            <!--<input type="text"-->
+                <!--ng-mouseover="focusFilter = true"-->
+                <!--ng-model="currentCol.filterValue"-->
+                <!--ng-keydown="onFilterKeydown($event)">-->
+        </li>
+    </ul>
+</div>

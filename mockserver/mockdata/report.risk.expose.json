@@ -1,0 +1,149 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": {
+        "filter": [
+            {
+                "key": "flow",
+                "name": "流量",
+                "currentKey": "all",
+                "conditions": [
+                    {
+                        "key": "all",
+                        "name": "all"
+                    },
+                    {
+                        "key": "pc",
+                        "name": "PC"
+                    },
+                    {
+                        "key": "wise",
+                        "name": "wise"
+                    }
+                ]
+            },
+            {
+                "key": "channel",
+                "name": "频道",
+                "currentKey": "all",
+                "conditions": [
+                    {
+                        "key": "all",
+                        "name": "all"
+                    },
+                    {
+                        "key": "fc",
+                        "name": "凤巢"
+                    },
+                    {
+                        "key": "tieba",
+                        "name": "贴吧"
+                    },
+                    {
+                        "key": "zhidao",
+                        "name": "知道"
+                    },
+                    {
+                        "key": "ditu",
+                        "name": "地图"
+                    }
+                ]
+            },
+            {
+                "key": "page",
+                "name": "页码",
+                "currentKey": "all",
+                "conditions": [
+                    {
+                        "key": "all",
+                        "name": "all"
+                    },
+                    {
+                        "all": "first",
+                        "name": "首页"
+                    }
+                ]
+            },
+            {
+                "key": "position",
+                "name": "位置",
+                "currentKey": "all",
+                "conditions": [
+                    {
+                        "key": "all",
+                        "name": "all"
+                    },
+                    {
+                        "key": "left",
+                        "name": "左侧pc"
+                    },
+                    {
+                        "key": "top",
+                        "name": "上方wise"
+                    }
+                ]
+            },
+            {
+                "key": "dimension",
+                "name": "维度",
+                "currentKey": "all",
+                "conditions": [
+                    {
+                        "key": "all",
+                        "name": "检索次数"
+                    },
+                    {
+                        "key": "left",
+                        "name": "展现"
+                    },
+                    {
+                        "key": "top",
+                        "name": "消费"
+                    }
+                ]
+            }
+        ],
+        "charts": [
+            {
+                "type": 1,
+                "title": "",
+                "description": "",
+                "data": {
+                    "xdata": ["2016-08-01", "2016-08-02", "2016-08-03", "2016-08-04", "2016-08-05", "2016-08-06", "2016-08-07"],
+                    "yAxis": [
+                        {
+                            "name": "展现量",
+                            "unit": ""
+                        },
+                        {
+                            "name": "占比",
+                            "unit": "%"
+                        }
+                    ],
+                    "series": [
+                        {
+                            "name": "小于等于4",
+                            "type": 4,
+                            "stack": "bar",
+                            "barMaxWidth": "50%",
+                            "vals": [3000, 1820, 1901, 2304, 2090, 3300, 100]
+                        },
+                        {
+                            "name": "大于4",
+                            "type": 4,
+                            "stack": "bar",
+                            "barMaxWidth": "50%",
+                            "vals": [3000, 1820, 1901, 2304, 2090, 3300, 3100]
+                        },
+                        {
+                            "name": "风险占比",
+                            "type": 1,
+                            "yAxisIndex": 1,
+                            "vals": [75.55, 65, 100, 100, 0, 83.1, 75]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

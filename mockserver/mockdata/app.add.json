@@ -1,0 +1,14 @@
+{
+    "status": 0,
+    "message": "操作成功",
+    "result": {
+        "id": 1,
+        "title": "模型1",
+        "className": "ModelOne",
+        "appPath": "/webApi/v1/model/1",
+        "info": "使用，配置描述帮助",
+        "creator": "zhangyou04",
+        "createTime": "2016-09-08",
+        "updateTime": "2016-09-08"
+    }
+}

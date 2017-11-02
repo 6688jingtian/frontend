@@ -1,0 +1,19 @@
+{
+    "status": 0,
+    "message": "操作成功",
+    "result": {
+        "sceneId": 1,
+	    "planId": 1,
+	    "appId": 1,
+	    "taskTypeId": 123,
+	    "title": "我是计划名称",
+	    "inputConf": "123",
+	    "outputConf": "123",
+	    "exeConf": "123",
+	    "core": 100,
+	    "mem": 20,
+	    "type": 1,
+        "options": "{\"mem\":200,\"core\":50}",
+	    "dependency": 123
+    }
+}

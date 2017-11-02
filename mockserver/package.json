@@ -1,0 +1,23 @@
+{
+  "name": "mockserver",
+  "version": "1.0.0",
+  "description": "node mockserver for front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "~1.4.3",
+    "express": "^4.13.4",
+    "express-session": "^1.14.2",
+    "debug": "~2.2.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "xml2js": "^0.4.17"
+  },
+  "dependencies": {}
+}

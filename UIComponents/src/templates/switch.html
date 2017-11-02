@@ -1,0 +1,13 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._onChange = function (val) {
+        console.log('switch change', val );
+    };
+</script>
+<ui-switch></ui-switch>
+
+<ui-switch on="true" on-text="线上" off-text="线下"></ui-switch>
+
+<ui-switch on="currentComponent.data.on" on-text="开" off-text="关"
+    on-change="_onChange(currentComponent.data.on)"></ui-switch>
+<span>{{currentComponent.data.on}}</span>

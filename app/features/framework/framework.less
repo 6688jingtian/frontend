@@ -1,0 +1,68 @@
+@import (reference) "../../style/theme.less";
+
+.framework-view {
+    padding: 20px;
+    border-radius: 5px;
+    background: @primaryBackgroundColor;
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    &> section {
+        &:first-child h2 {
+            margin-top: 0;
+        }
+        &> p:not(:first-child),
+        &> ul:not(:first-child),
+        &> section:not(:first-child) {
+            padding-left: 40px;
+        }
+        ul {
+            list-style-position: outside;
+            margin-left: 1em;
+        }
+    }
+
+    .folder-structure-box {
+        color: @secondaryTextColor;
+        &> img {
+            width: 40vw;
+            margin-left: -40px;
+        }
+        &> div {
+            width: 40vw;
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 20px;
+            box-sizing: border-box;
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                padding-left: 2em;
+            }
+        }
+    }
+
+    .quick-start {
+        color: @secondaryTextColor;
+        &> div {
+            padding-left: 2em;
+            color:  @secondaryTextColor;
+            h5 {
+                margin: 20px 0 6px 0;
+            }
+            p {
+                font-size: 14px;
+                padding-left: 2em;
+            }
+        }
+    }
+}
+
+iframe {
+    background: @primaryBackgroundColor;
+    border: none;
+}

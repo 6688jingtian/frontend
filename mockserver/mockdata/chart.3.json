@@ -1,0 +1,37 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": {
+        "id": 3,
+        "name": "风控动态",
+        "description": "test",
+        "type": 3,
+        "filters": [],
+        "thead": [{
+            "key": "id",
+            "type": "text",
+            "text": "ID"
+        },
+        {
+            "key": "title",
+            "type": "text",
+            "text": "风控事件"
+        },
+        {
+            "key": "link",
+            "type": "link",
+            "text": "链接"
+        },
+        {
+            "key": "createAt",
+            "type": "text",
+            "text": "创建时间"
+        }],
+        "tbody": [{
+            "id": 1,
+            "title": "《京华时报》：百度搜狗涉嫌在搜索引擎中发布违法广告被立案调查",
+            "link": "http://www.baidu.com",
+            "createAt": 1476858517000
+        }]
+    }
+}

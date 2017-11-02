@@ -1,0 +1,26 @@
+{
+  "app": {
+    "js": "app.js"
+  },
+  "index.bundle": {
+    "js": "index.bundle.js"
+  },
+  "framework.bundle": {
+    "js": "framework.bundle.js"
+  },
+  "dashboard.bundle": {
+    "js": "dashboard.bundle.js"
+  },
+  "templates.bundle": {
+    "js": "templates.bundle.js"
+  },
+  "datasearch": {
+    "js": "datasearch.js"
+  },
+  "index": {
+    "js": "index.js"
+  },
+  "common": {
+    "js": "common.js"
+  }
+}

@@ -1,0 +1,240 @@
+@import './style/theme.less';
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: @primaryBackgroundColor;
+}
+
+body > layout {
+    box-sizing: border-box;
+    border: none !important;
+    &> .ui-layout-left {
+        overflow: auto;
+        &::-webkit-scrollbar-track {
+            background-color: rgba(255, 255, 255, .65);
+        }
+        background: #293031;
+        .ui-tree-menu {
+            color: @textPrimaryColor;
+            .node-item {
+                .ui-tree-switcher:after {
+                    border-left-color: @textPrimaryColor;
+                }
+                &.selected {
+                    &> .node-info {
+                        background: #454949;
+                        .node-name {
+                            color: #ffda00;
+                        }
+                    }
+                    .ui-tree-switcher:after {
+                        border-left-color: #ffda00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.conponents-labels {
+    margin-bottom: 20px;
+    &> label:first-child {
+        border-bottom: 1px solid @dividerColor;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .ui-checkbox-wrapper {
+        line-height:  40px;
+    }
+}
+
+.conponents-labels .ui-checkbox-group > label {
+    display: inline-block;
+    min-width: 160px;
+}
+
+.component-content {
+    width: 100%;
+    padding: 20px;
+    overflow: auto;
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        & > span {
+            font-size: 20px;
+        }
+    }
+}
+
+.without-td-border td {
+    border: none !important;
+}
+
+.without-td-border input {
+    border: none !important;
+}
+
+.ui-layout .ui-layout {
+    border: 1px solid #ddd !important;
+}
+
+.mindmap {
+    height: auto !important;
+}
+
+.accordion-section .accordion-content .trees-box {
+    display: flex;
+}
+
+.accordion-content .tree-view {
+    display: inline-block;
+    border: 1px solid @dividerColor;
+    margin-right: 10px;
+    flex: 1; 
+}
+
+.directedgraph-section {
+    border: 1px solid @dividerColor;
+}
+
+.directedgraph-section canvas {
+    box-sizing: border-box;
+    border: 1px solid @primaryColor;
+}
+
+.tree-section {
+    .flex {
+        display: flex;
+    }
+    .tree-view {
+        margin: 20px 30px 0 0;
+        min-width: 240px;
+        border: 1px solid @dividerColor;
+    }
+}
+
+.tree-section .tree-view {
+    margin-right: 30px;
+}
+
+.simpleJsonDiff-section {
+    display: flex;
+}
+.simpleJsonDiff-section > div:first-child {
+    border: 1px solid @dividerColor;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.simpleJsonDiff-section > div:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.simpleJsonDiff-section > div:last-child h3 {
+    margin: 0;
+}
+
+.simpleJsonDiff-section > div:last-child > pre {
+    border-radius: 2px;
+    border: 1px solid @dividerColor;
+    flex: 1;
+}
+
+.CodeMirror {
+    border: 1px solid @dividerColor;
+    height: auto;
+    width: auto;
+}
+
+.edit-container {
+    margin-top: 20px;
+}
+
+.toolbar-box {
+    padding: 10px 0;
+    .ui-radio-group {
+        display: inline-block;
+    }
+    i {
+        font-size: 12px;
+        color: @secondaryTextColor;
+        svg {
+            color: @primaryColor;
+        }
+    }
+}
+
+.component-content {
+    .ui-radio-group {
+        margin-bottom: 10px;
+    }
+}
+
+.carousel-section {
+    .ui-carousel-wrapper {
+        height: 200px;
+    }
+    .ui-carousel-wrapper .item {
+        color: @textPrimaryColor;
+        background: #364d79;
+        height: 200px;
+        line-height: 200px;
+        h1 {
+            margin: 0;
+        }
+    }
+}
+
+
+.icon_lists {
+    width: 100%;
+    padding: 0;
+}
+
+.icon_lists li {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height:160px;
+    text-align: center;
+    list-style: none !important;
+}
+.icon_lists .icon{
+    font-size: 42px;
+    line-height: 100px;
+    margin: 10px 0;
+    color:#333;
+    -webkit-transition: font-size 0.25s ease-out 0s;
+    -moz-transition: font-size 0.25s ease-out 0s;
+    transition: font-size 0.25s ease-out 0s;
+
+}
+.icon_lists .icon:hover{
+    font-size: 100px;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: transparent;
+}

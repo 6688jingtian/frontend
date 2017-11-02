@@ -1,0 +1,10 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._changePage = function (page) {
+        console.log(arguments);
+    };
+</script>
+
+<pagination info="currentComponent.data" on-change="_changePage"></pagination>
+
+

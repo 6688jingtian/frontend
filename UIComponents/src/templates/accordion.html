@@ -1,0 +1,19 @@
+<accordion>
+    <accordion-item title="Mindmap">
+        <mindmap data="getComponentById('mindmap').data"></mindmap>
+    </accordion-item>
+    <accordion-item title="TreeView">
+        <div class="trees-box">
+            <treeview draggable="true"
+                data="getComponentById('tree').data"
+                on-drop="getComponentById('tree').events.onDrop"></treeview>
+            <treeview draggable="true"
+                ng-init="nodes = getComponentData('tree', true)"
+                data="nodes"></treeview>
+            <treeview draggable="false"
+                multiple="true"
+                data="getComponentById('tree').data"
+                on-drop="getComponentById('tree').events.onDrop"></treeview>
+        </div>
+    </accordion-item>
+</accordion>

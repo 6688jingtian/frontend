@@ -1,0 +1,506 @@
+{
+  "name": "UB技术地图",
+  "children": [
+    {
+      "name": "数据测试",
+      "children": [
+        {
+          "name": "赵雅琼",
+          "hovor": {
+            "topicName": "大数据测试平台",
+            "content": "大数据线下正确性测试和线上监控定位的平台，包含拓扑分析，全面提供大数据线下和线上测试能力。",
+            "link": "http://10.95.40.17:8011/info"
+          }
+        },{
+          "name": "李思",
+          "hovor": {
+            "topicName": "大数据系统级计算验证",
+            "content": "支持多维度数据源定制、资源动态调度、结果分布式校验和debug问题排查等，自动化解决商业数据产品计算层复杂算法、模型的正确性校验和排查问题",
+            "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=290003104"
+          }
+        }
+      ]
+    },
+    {
+      "name": "系统监控",
+      "children": [
+        {
+          "name": "指标体系建设",
+          "children": [
+            {
+              "name": "赵雅琼",
+              "hovor": {
+                "topicName": "流量磨损",
+                "content": "流量磨损：对网盟流量磨损进行分析，可以用于排查、监控等",
+                "link": ""
+              }
+            },
+            {
+              "name": "胡陈豪",
+              "hovor": {
+                "topicName": "流量分析",
+                "content": "流量监控：建立流量磨损、合理性监控，提高流量利用率和效果",
+                "link": ""
+              }
+            },{
+              "name": "王琴、俞莉花",
+              "hovor": {
+                "topicName": "Java Trace多维度性能分析",
+                "content": "对线上系统海量数据实时监控，分析。基于数据进行模型建立，性能痛点模型直观呈现。",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=42746967"
+              }
+            }
+          ]
+        }, {
+          "name": "监控平台建设",
+          "children": [
+            {
+              "name": "杨丹",
+              "hovor": {
+                "topicName": "USI",
+                "content": "网盟监控平台",
+                "link": "http://usi.baidu.com/usi3.0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "问题定位",
+      "children": [
+        {
+          "name": "指标体系建设",
+          "children": [
+            {
+              "name": "赵雅琼",
+              "hovor": {
+                "topicName": "流量磨损",
+                "content": "流量磨损：对网盟流量磨损进行分析，可以用于排查、监控等",
+                "link": ""
+              }
+            },{
+              "name": "杨丹",
+              "hovor": {
+                "topicName": "SLA监控",
+                "content": "SLA监控专题，对系统稳定性进行监控和预警",
+                "link": "http://usi.baidu.com/usi3.0#/monitor/slasearchdis"
+              }
+            }
+          ]
+        },{
+          "name": "平台构建",
+          "children": [
+            {
+              "name": "翁寒一",
+              "hovor": {
+                "topicName": "具有录入功能的排查系统",
+                "content": "设计具有录入功能的排查系统，实现排查树的自增长；命令行交互，计划向hi服务号靠拢， 做到自主排查 -> 自动排查 良性循环",
+                "link": ""
+              }
+            },{
+              "name": "杨丹",
+              "hovor": {
+                "topicName": "SLA监控",
+                "content": "SLA监控专题，对系统稳定性进行监控和预警",
+                "link": "http://usi.baidu.com/usi3.0#/monitor/slasearchdis"
+              }
+
+            },{
+              "name": "张鹏飞",
+              "hovor": {
+                "topicName": "【原生广告】监控与排查",
+                "content": "http://naotu.baidu.com/file/1028669461720d4b58ab6475769a8fa9?token=1596192527a979be",
+                "link": "http://nadebug.baidu.com"
+              }
+            }
+          ]
+        },{
+          "name": "客户&系统问题定位",
+          "children": [
+            {
+              "name": "遆菲菲",
+              "hovor": {
+                "topicName": "网盟排查平台",
+                "content": "平台提供通用的数据分析（数据库查询、大数据分析等）、系统DEBUG、排查结果组织展示等能力，开发者通过页面配置排查需求，调用平台基础排查能力开发API组织业务逻辑便可快速实现排查方案的落地；对于用户可以通过WEB或者API方式提交排查任务及查看结果",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=35953392"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "评测",
+      "children": [
+        {
+          "name": "策略分析",
+          "children": [
+            {
+              "name": "邓凯仁",
+              "hovor": {
+                "topicName": "丘比特项目",
+                "content": "对网盟客户投放进行分析，通过受众联系媒体和广告主，挖掘不合理投放，优化投放效果",
+                "link": "http://cupid.baidu.com:8080/cupidplat/tasks/index"
+              }
+            },{
+              "name": "董瑛",
+              "hovor": {
+                "topicName": "【原生广告】变现效果评测",
+                "content": "",
+                "link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "app破解",
+          "children": [
+            {
+              "name": "赵雅琼",
+              "hovor": {
+                "topicName": "先知",
+                "content": "先知：APP流量大盘分析，提供流量线索",
+                "link": "http://seer.baidu.com/"
+              }
+            }
+          ]
+        },
+        {
+          "name": "竞品对比",
+          "children": [
+            {
+              "name": "赵雅琼",
+              "hovor": {
+                "topicName": "先知",
+                "content": "先知：APP流量大盘分析，提供流量线索",
+                "link": "http://seer.baidu.com/"
+              }
+            }
+          ]
+        },
+        {
+          "name": "流量分析",
+          "children": [
+            {
+              "name": "赵雅琼",
+              "hovor": {
+                "topicName": "先知",
+                "content": "先知：APP流量大盘分析，提供流量线索",
+                "link": "http://seer.baidu.com/"
+              }
+            },
+            {
+              "name": "李思",
+              "hovor": {
+                "topicName": "媒体优化专家",
+                "content": "通过圈定相似代码位，对媒体广告位样式设置、页面布局、页面内容等进行策略优化，集成到union、ssp等媒体端",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=270472958"
+              }
+            },
+            {
+              "name": "李雅玉",
+              "hovor": {
+                "topicName": "内容联盟评测",
+                "content": "内容联盟评测体系构建",
+                "link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "平台构建",
+          "children": [
+            {
+              "name": "戴优丽",
+              "hovor": {
+                "topicName": "SAT（定制化物料质量平台）",
+                "content": "线下服务及物料准入，线上动态物料监控，线上服务监控",
+                "link": "http://agroup.baidu.com/sat/file/view/18713"
+              }
+            },{
+              "name": "李雅玉",
+              "hovor": {
+                "topicName": "内容联盟评测",
+                "content": "内容联盟评测体系构建",
+                "link": ""
+              }
+
+            }
+          ]
+        },
+        {
+          "name": "体验分析",
+          "children": [
+            {
+              "name": "戴优丽",
+              "hovor": {
+                "topicName": "SAT（定制化物料质量平台）",
+                "content": "线下服务及物料准入，线上动态物料监控，线上服务监控",
+                "link": "http://agroup.baidu.com/sat/file/view/18713"
+              }
+            },
+            {
+              "name": "黄焱",
+              "hovor": {
+                "topicName": "创意分析服务平台",
+                "content": "对线上创意质量分析，分析创意内容和点击后行为，挖掘得到非法和不合规创意，推动闭环落地和广告主，挖掘不合理投放，优化投放效果",
+                "link": "http://iap.baidu.com:8826/"
+              }
+            }, {
+              "name": "李雅玉",
+              "hovor": {
+                "topicName": "内容联盟评测",
+                "content": "内容联盟评测体系构建",
+                "link": ""
+              }
+            }, {
+              "name": "王鸣云",
+              "hovor": {
+                "topicName": "adq",
+                "content": "http://agroup.baidu.com/mad/naotu/view/233948",
+                "link": "http://adq.baidu.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "移动端测试",
+      "children": [
+        {
+          "name": "胡陈豪",
+          "hovor": {
+            "topicName": "SDK自动化测试",
+            "content": "SDK自动化测试，覆盖功能测试、性能测试和系统级测试，提供广告样式校验、日志校验等能力",
+            "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=213528968"
+          }
+        },{
+          "name": "吕宁",
+          "hovor": {
+            "topicName": "【原生广告】投放端测试服务",
+            "content": "",
+            "link": "http://agroup.baidu.com/mad/naotu/view/235999"
+          }
+        },{
+          "name": "手机资源管理",
+          "children": [
+            {
+              "name": "陈鲁",
+              "hovor": {
+                "topicName": "RMTC",
+                "content": "手机设备管理，构建基于手机设备的移动测试云平台",
+                "link": "http://rmtc.baidu.com"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "前端测试",
+      "children": [
+        {
+          "name": "模版测试",
+          "children": [
+            {
+              "name": "陈丽",
+              "hovor": {
+                "topicName": "广告样式自动化校验及监控",
+                "content": "自动化校验广告返回内容正确性和样式展现正确性，可应用于线下网盟全量模板自动化回归测试，也可以应用于线上对top媒体的广告展现进行如“广告展现白板”、“展现遮挡”等问题监控",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=295929042"
+              }
+            }
+          ]
+        } ,{
+          "name": "移动SDK测试",
+          "children": [
+            {
+              "name": "胡陈豪",
+              "hovor": {
+                "topicName": "SDK自动化测试",
+                "content": "SDK自动化测试，覆盖功能测试、性能测试和系统级测试，提供广告样式校验、日志校验等能力",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=213528968"
+              }
+            }
+          ]
+        },{
+          "name": "JS测试",
+          "children": [
+            {
+              "name": "翁寒一",
+
+              "hovor": {
+                "topicName": "J基于组件化的物料样式自动化测试",
+                "content": "相对于原有仅定制化样式粒度的手工测试,组件化的样式测试将测试集下降到组件粒度, 底层借助mvp实现自动化的测试目标。",
+                "link": ""
+              }
+            }
+          ]
+        },{
+          "name": "平台构建",
+          "children": [
+            {
+              "name": "马亚明",
+
+              "hovor": {
+                "topicName": "MVP平台",
+                "content": "前端测试云平台，基于移动／pc浏览器提供前端测试的基础能力，支撑功能测试、兼容性测试、样式测试、大规模召回测试等",
+                "link": "http://mvp.baidu.com"
+              }
+            },{
+              "name": "吕宁",
+
+              "hovor": {
+                "topicName": "【原生广告】投放端测试服务",
+                "content": "",
+                "link": "http://agroup.baidu.com/mad/naotu/view/235999"
+              }
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "性能测试",
+      "children": [
+        {
+          "name": "性能分析",
+          "children": [
+            {
+              "name": "王琴、俞莉花",
+              "hovor": {
+                "topicName": "Java Trace多维度性能分析",
+                "content": "基于数据进行模型建立，性能痛点模型直观呈现。深入分析定位，定位粒度最小的方法函数，亦可实现对上下游模块间的问题定位。",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=42746967"
+              }
+            },{
+              "name": "孙四海",
+              "hovor": {
+                "topicName": "检索系统线上性能分析",
+                "content": "线上性能数据刻画，针对工程指标如：分广告位/分机房/分机器/分子流水，结合检索时间time、失败率fail、检索&召回pv等输出报表和趋势图，作为线上风险体检",
+                "link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "接口测试",
+      "children": [
+        {
+          "name": "测试覆盖度提升",
+          "children": [
+            {
+              "name": "翁寒一",
+              "hovor": {
+                "topicName": "接口自动化的效率改进",
+                "content": "推进rd-测试驱动开发, 深入rd原有ut测试框架, 为接口自动化提供半自动更新依据。",
+                "link": "http://wiki.baidu.com/pages/viewpage.action?pageId=42746967"
+              }
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "系统级测试",
+      "children": [
+        {
+          "name": "容器管理方案",
+          "children": [
+            {
+              "name": "杨金峰",
+              "hovor": {
+                "topicName": "EMC",
+                "content": "Docker容器化构建解决方案",
+                "link": "http://emc.baidu.com"
+              }
+            }
+          ]
+        }, {
+          "name": "环境构建",
+          "children": [
+            {
+              "name": "尹兴林",
+              "hovor": {
+                "topicName": "BTS(网盟基础测试服务平台)",
+                "content": "根据网盟检索端产品线测试特点，以平台化、接口化的思维模式设计了BTS基础测试服务平台，抽象出环境、driver cluster、流量仿真、stub cluster、计算5种基础服务组件， 平台通过对外开放强大的基础服务组件 + App开发者框架 + 衍生精品测试服务App的服务生态来支持网盟检索端各个产品线各种场景自动化测试",
+                "link": "http://bts.baidu.com"
+              }
+            }
+          ]
+        },{
+          "name": "系统任务调度",
+          "children": [
+            {
+              "name": "尹兴林",
+              "hovor": {
+                "topicName": "BTS(网盟基础测试服务平台)",
+                "content": "根据网盟检索端产品线测试特点，以平台化、接口化的思维模式设计了BTS基础测试服务平台，抽象出环境、driver cluster、流量仿真、stub cluster、计算5种基础服务组件， 平台通过对外开放强大的基础服务组件 + App开发者框架 + 衍生精品测试服务App的服务生态来支持网盟检索端各个产品线各种场景自动化测试",
+                "link": "http://bts.baidu.com"
+              }
+            }
+          ]
+        }, {
+          "name": "资源管理",
+          "children": [
+            {
+              "name": "郝丹",
+              "hovor": {
+                "topicName": "XSTP",
+                "content": "系统级测试平台，解决环境构建、数据构建、任务调度等核心问题",
+                "link": "http://xstp.baidu.com"
+              }
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "大数据",
+      "children": [
+        {
+          "name": "大数据平台",
+          "children": [
+            {
+              "name": "朱加伟、王胜、孙晨蛟",
+              "hovor": {
+                "topicName": "接口自动化的效率改进",
+                "content": "针对大数据的全流程(获取、计算、存储、可视化)提供通用&定制解决方案",
+                "link": "http://haichuan.baidu.com"
+              }
+            }
+          ]
+        },{
+          "name": "数据分析和挖掘",
+          "children": [
+            {
+              "name": "朱加伟、王胜、孙晨蛟",
+              "hovor": {
+                "topicName": "海川平台",
+                "content": "支撑构建定制&通用数据场景，包括但不限：系统性能分析、灰度、大数据测试&监控、风险挖掘、评测等",
+                "link": "http://haichuan.baidu.com"
+              }
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "持续集成",
+      "children": [
+        {
+          "name": "平台建设",
+          "children": [
+            {
+              "name": "张翔",
+              "hovor": {
+                "topicName": "CIBC&titan",
+                "content": "CI相关平台",
+                "link": "http://cibc.baidu.com"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<script>
+    GLOBALSCOPE._selectKeyword = function (keyword) {
+        console.log(keyword);
+    };
+</script>
+
+<h5>replace mode</h5>
+<input autocompletion
+    placeholder="focus me"
+    keywords="currentComponent.data">
+
+<h5>insert mode</h5>
+<input autocompletion
+    mode="insert"
+    placeholder="Press Ctrl+Space"
+    keywords="currentComponent.data">
+
+<hr>
+
+<textarea autocompletion
+    mode="insert"
+    extra-keys="Ctrl+/"
+    keywords="currentComponent.data"
+    on-select="_selectKeyword"
+    placeholder="Press Ctrl+/"
+    rows="6"
+    cols="100"></textarea>
+

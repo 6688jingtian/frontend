@@ -1,0 +1,6 @@
+<div class="ui-tabset">
+    <ul class="ui-tabset-header" ng-transclude></ul>
+    <div class="ui-tabset-content">
+        <div ng-repeat="tab in tabs track by $index" tab-content="tab" ng-class="{active: tab.active}"></div>
+    </div>
+</div>

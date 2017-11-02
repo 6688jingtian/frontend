@@ -1,0 +1,16 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._search = function (val) {
+        console.log(val, arguments );
+        alert('search called with value:' + val);
+    };
+    GLOBALSCOPE._onClear = function (val) {
+        console.log(val, arguments );
+        alert('clear' + val);
+    };
+</script>
+<ui-search-field value="currentComponent.data.value"
+    placeholder="input placeholder"
+    search="_search"
+    on-clear="_onClear"></ui-search-field>
+

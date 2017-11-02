@@ -1,0 +1,11 @@
+{
+    "status": 0,
+    "message": "success",
+    "result": {
+        "id": 11,
+        "name": "zhangyou04",
+        "token": "f53fdfa3-67ad-41f1-82af-daf746f65176",
+        "createAt": 1474184178000,
+        "updateAt": 1474184178000
+    }
+}

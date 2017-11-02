@@ -1,0 +1,8 @@
+<div class="dropdown dropdown-list">
+    <div class="menu-btn" ng-click="toggleList()">
+        <!-- <input value="{{selectedItem[name] || data[0][name]}}" >     -->
+        {{selectedItem[name] || data[0][name]}}
+    </div>
+  	
+	<menu-list items="data" children-key="{{childrenKey}}" on-change="onChange" ng-show="showList"></menu-list>
+</div>

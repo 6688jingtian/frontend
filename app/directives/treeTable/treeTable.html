@@ -1,0 +1,24 @@
+<div class="treetable-container">
+    <table>
+        <thead>
+            <th ng-repeat="col in cols track by $index">{{col.name}}</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in rows track by $index"
+                level="{{row.level}}" ng-hide="row.hide"
+                ng-class="{'collapsed-row': row.collapsed}">
+                <td ng-repeat="col in cols" ng-style="getExpandFieldStyle(row, col, $index)">
+                    <div class="table-cell">
+                        <span ng-if="$index === expandIndex && row.children && row.children.length"
+                            ng-click="toggle(row)"
+                            class="node-switch {{makeIconClass}}"></span>
+                        <span ng-if="!col.template">
+                            {{col.formatter ? col.formatter(col, row) : row[col.key]}}
+                        </span>
+                        <span ng-if="col.template" compile="col.template"></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+</div>

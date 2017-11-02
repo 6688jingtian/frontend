@@ -1,0 +1,33 @@
+<script>
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._onCheckboxChange = function (val) {
+        console.log('_onRadioChange', val);
+    };
+</script>
+
+<ui-checkbox ng-model="currentComponent.data.checkbox"
+    ng-change="_onCheckboxChange(currentComponent.data.checkbox)">Checkbox</ui-checkbox>
+<p>checkbox: {{currentComponent.data.checkbox}}</p>
+
+<ui-checkbox-group ng-model="currentComponent.data.selectedObjs"
+                   ng-change="_onCheckboxChange(currentComponent.data.selectedItems2)">
+    <ui-checkbox ng-repeat="obj in currentComponent.data.objs track by obj.key" ng-value="obj">{{obj.name}}</ui-checkbox>
+</ui-checkbox-group>
+<p>selected Objs: {{currentComponent.data.selectedObjs}}</p>
+
+<ui-checkbox-group ng-model="currentComponent.data.selectedItems"
+    ng-change="_onCheckboxChange(currentComponent.data.selectedItems)">
+    <ui-checkbox value="Android">Android</ui-checkbox>
+    <ui-checkbox value="Iphone">Iphone</ui-checkbox>
+    <ui-checkbox value="WinPhone">WinPhone</ui-checkbox>
+</ui-checkbox-group>
+<p>selected Strings: {{currentComponent.data.selectedItems}}</p>
+v
+<ui-checkbox-group ng-model="currentComponent.data.selectedLetter"
+    ng-change="_onCheckboxChange(currentComponent.data.selectedLetter)">
+    <ui-checkbox-button value="a">A</ui-checkbox-button>
+    <ui-checkbox-button value="b">B</ui-checkbox-button>
+    <ui-checkbox-button value="c">C</ui-checkbox-button>
+    <ui-checkbox-button value="d">D</ui-checkbox-button>
+</ui-checkbox-group>
+<p>selected Letter: {{currentComponent.data.selectedLetter}}</p>

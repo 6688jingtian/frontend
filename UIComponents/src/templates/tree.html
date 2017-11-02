@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+
+    GLOBALSCOPE._getNodeText = function (node) {
+        return node.id + '-' + node.name;
+    };
+    GLOBALSCOPE._logArguemtns = function () {
+        console.log(arguments);
+    };
+    GLOBALSCOPE._onBeforeDrop = function () {
+        console.log(arguments);
+        return true;
+    };
+    GLOBALSCOPE._getToggleIconClass = function (node) {
+        return node.isCollapsed ? 'fa fa-folder-open' : 'fa fa-folder-close';
+    };
+    GLOBALSCOPE._selectedNodes = [111];
+
+</script>
+
+<ui-radio-group ng-model="currentComponent.demoType" ng-init="currentComponent.demoType = 'single'">
+    <ui-radio-button value="single">单选</ui-radio-button>
+    <ui-radio-button value="multiple">多选</ui-radio-button>
+    <ui-radio-button value="drag">单颗树拖拽</ui-radio-button>
+    <ui-radio-button value="dragBetween">树之间拖拽</ui-radio-button>
+</ui-radio-group>
+
+<ui-radio-group ng-model="currentComponent.showLine" ng-init="currentComponent.showLine = false">
+    <ui-radio-button ng-value="false">无连接线</ui-radio-button>
+    <ui-radio-button ng-value="true">有连接线</ui-radio-button>
+</ui-radio-group>
+
+<div class="flex">
+    <treeview data="currentComponent.data"
+        show-line="currentComponent.showLine"
+        ng-if="currentComponent.demoType === 'single'"
+        collapsed="true"
+        selected-nodes="_selectedNodes"></treeview>
+    <treeview draggable="true" ng-if="currentComponent.demoType.indexOf('drag') > -1"
+              show-line="currentComponent.showLine"
+              ng-init="data1 = getComponentData('tree', true)"
+              data="data1"
+              get-node-text="_getNodeText"
+              on-toggle-expand="_logArguemtns"
+              on-edit="_logArguemtns"
+              on-delete="_logArguemtns"
+              on-drag-start="_logArguemtns"
+              on-drop="_logArguemtns"
+              on-before-drop="_onBeforeDrop"></treeview>
+    <treeview draggable="true" ng-if="currentComponent.demoType === 'dragBetween'"
+              show-line="currentComponent.showLine"
+              data="[
+        {
+            id: 81,
+            name: 81,
+            children: [
+                {
+                    id: 881,
+                    name: 881
+                }
+            ]
+        },
+        {
+            id: 82,
+            name: 82,
+            children: [
+                {
+                    id: 882,
+                    name: 882
+                }
+            ]
+        }
+    ]"></treeview>
+    <treeview draggable="true"
+              multiple="true"
+              show-line="currentComponent.showLine"
+              ng-init="data2 = getComponentData('tree', true)"
+              data="data2"
+              ng-if="currentComponent.demoType === 'multiple'"></treeview>
+</div>

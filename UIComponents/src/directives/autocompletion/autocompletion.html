@@ -1,0 +1,6 @@
+<ul class="autocompletion-list" ng-style="style">
+	<li ng-repeat="keyword in keywords track by $index"
+        ng-click="selectItem(keyword, $event)"
+        ng-mouseover="mouseoverHandle($index)"
+        ng-class="{'active': activeItemIndex === $index}">{{keyword}}</li>
+</ul>

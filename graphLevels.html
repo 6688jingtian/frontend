@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre></pre>
+    <pre id="tree"></pre>
+    <script>
+//        [
+//            {
+//                id: 3,
+//                children: [
+//                    {
+//                        id: 1
+//                    }
+//                ]
+//            },
+//            {
+//                id: 4,
+//                children: [
+//                    {
+//                        id: 2
+//                    }
+//                ]
+//            },
+//            {
+//                id: 5,
+//                children: [
+//                    {
+//                        id: 3
+//                    },
+//                    {
+//                        id: 4
+//                    }
+//                ]
+//            }
+//        ]
+        let nodes = [
+            {
+                id: 1,
+                name: '1:level 3',
+                deps: [
+                    {id: 3}
+                ]
+            },
+            {
+                id: 2,
+                name: '2:level 3',
+                deps: [
+                    {id: 4}
+                ]
+            },
+            {
+                id: 3,
+                name: '3:level 2',
+                deps: [
+                    {id: 5}
+                ]
+            },
+            {
+                id: 4,
+                name: '4:level 2',
+                deps: [
+                    {id: 5}
+                ]
+            },
+            {
+                id: 5,
+                name: '5:level 1'
+            }
+        ];
+        let findNodeById = id => {
+            return nodes.filter(node => node.id === id)[0];
+        };
+        let getNodesLevelMap = nodes => {
+            let transformNodesToTree = nodes => {
+                let tree = [];
+                let depNode;
+                nodes.forEach(node => {
+                    if (node.deps && node.deps.length) {
+                        node.deps.forEach(dep => {
+                            depNode = findNodeById(dep.id);
+                            if (depNode) {
+                                depNode.children = depNode.children || [];
+                                depNode.children.push(node);
+                            }
+                            else {
+                                node.deps = [];
+                                tree.push(node);
+                            }
+                        });
+                    }
+                    else {
+                        tree.push(node);
+                    }
+                });
+
+//            document.querySelector('#tree').innerHTML = JSON.stringify(tree, null, 4);
+                return tree;
+            };
+            let tree = transformNodesToTree(nodes);
+            let levelsMap = {};
+            let addLevelToNodes = (nodes, level) => {
+                nodes = nodes || [];
+                nodes.forEach(node => {
+                    node.level = level + 1;
+                    levelsMap[node.id] = node.level;
+                    addLevelToNodes(node.children, node.level);
+                });
+            };
+            addLevelToNodes(tree, 0);
+            return levelsMap;
+        };
+
+        let nodesLevelMap = getNodesLevelMap(nodes);
+
+        let depNode;
+        let maxLevel = 1;
+        let map = {};
+        let setLevel = node => {
+            node.level = node.level || 1;
+
+            if (node.deps && node.deps.length) {
+                let depsLevel = [];
+                node.deps.forEach(dep => {
+                    depNode = findNodeById(dep.id);
+                    setLevel(depNode);
+                    depsLevel.push(depNode.level);
+                });
+                node.level = Math.max.apply(null, depsLevel);
+            }
+
+            console.log('setLevel', node.level);
+            return node.level;
+        };
+
+        nodes.forEach((node, i) => {
+            let level = setLevel(node);
+            node.level = level;
+        });
+
+//        document.querySelector('pre').innerHTML = JSON.stringify(nodes, null, 4);
+    </script>
+</body>
+</html>

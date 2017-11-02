@@ -1,0 +1,22 @@
+{
+  "status": 0,
+  "message": "success",
+  "result": {
+    "recordAmount": 45,
+    "taskAmount": 5,
+    "taskSuccess": 5,
+    "taskFailed": 0,
+    "records": [
+      134,
+      133,
+      108,
+      106,
+      104,
+      102,
+      100,
+      98,
+      96,
+      94
+    ]
+  }
+}

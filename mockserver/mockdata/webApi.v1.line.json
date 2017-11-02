@@ -1,0 +1,26 @@
+{
+    "status": 0,
+    "msg": "",
+    "data": [
+    	{
+    		"name": "VA",
+    		"value": 20,
+    		"url": "http://va.baidu.com"
+    	},
+    	{
+    		"name": "HAICHUAN",
+    		"value": 30,
+    		"url": "http://haichuan.baidu.com"
+    	},
+    	{
+    		"name": "ITP",
+    		"value": 20,
+    		"url": "http://va.baidu.com"
+    	},
+    	{
+    		"name": "PLUTO",
+    		"value": 30,
+    		"url": "http://pluto.baidu.com"
+    	}
+    ]
+}

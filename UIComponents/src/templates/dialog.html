@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    /*you can add methods which's name be better start with '_' to GLOBALSCOPE*/
+    GLOBALSCOPE._openDialog = function (data) {
+        data.visible = true;
+    };
+</script>
+
+<ui-button class="ui-primary" ng-click="_openDialog(currentComponent.data)">Open Dialog</ui-button>
+
+<ui-dialog option="currentComponent.data">
+    <tabset>
+        <tab head="Mindmap">
+            <mindmap data="getComponentById('mindmap').data"></mindmap>
+        </tab>
+        <tab head="Treeview" select="_selectTab">
+            <div tab-head>Treeview <i>x</i></div>
+            <treeview draggable="false"
+                      multiple="true"
+                      data="getComponentById('tree').data"></treeview>
+        </tab>
+        <tab head="Treeview">
+            <tab-head>Hello tab-head <i>x</i></tab-head>
+            Hello Tabset:)
+        </tab>
+    </tabset>
+</ui-dialog>

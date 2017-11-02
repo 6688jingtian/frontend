@@ -1,0 +1,13 @@
+<div class="search-field">
+    <input tabindex="0" placeholder="{{placeholder}}"
+        ng-model="value"
+        ng-focus="onInputFocus()"
+        ng-blur="onInputBlur()"
+        ng-keyup="onInputKeyup($event)">
+    <ui-icon type="close"
+        ng-show="showClear"
+        ng-click="onClearInput()"></ui-icon>
+    <ui-icon type="search1"
+        ng-hide="showClear"
+        ng-click="onSearch()"></ui-icon>
+</div>

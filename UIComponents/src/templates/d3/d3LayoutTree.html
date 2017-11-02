@@ -1,0 +1,22 @@
+<script>
+    /* you can set the tooltip with the below interface, default show the node name*/
+    GLOBALSCOPE.currentComponent.getTooltip = function (node) {
+        if (node.hovor) {
+            let link = '';
+            if (node.hovor.link) {
+                link += '<a href="' + node.hovor.link + '" target="_black">查看详情</a>';
+            }
+            let tooltip = [
+                node.hovor.topicName + '<br>',
+                node.hovor.content ? '<p>' + node.hovor.content + ' ' + link + '</p>' : link,
+            ].join('');
+
+            return tooltip;
+        }
+        return node.name;
+    };
+</script>
+<d3-layout-tree data="currentComponent.data"
+    height="currentComponent.height"
+    width="currentComponent.width"
+    get-tooltip="currentComponent.getTooltip"></d3-layout-tree>

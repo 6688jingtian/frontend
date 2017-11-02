@@ -1,0 +1,30 @@
+<div>
+    <ui-icon type="search1"></ui-icon>
+    <ui-icon type="rightcircle"></ui-icon>
+    <ui-icon type="downcircleo"></ui-icon>
+    <ui-icon type="download"></ui-icon>
+    <ui-icon type="infocirlceo"></ui-icon>
+    <ui-icon type="mail"></ui-icon>
+    <ui-icon type="filter"></ui-icon>
+    <ui-icon type="star"></ui-icon>
+    <ui-icon type="check"></ui-icon>
+    <ui-icon type="close"></ui-icon>
+</div>
+<hr>
+
+<ui-button ng-click="currentComponent.showIconsList = !currentComponent.showIconsList">
+    图标列表
+    <ui-icon type="{{currentComponent.showIconsList ? 'up' : 'down'}}"></ui-icon>
+</ui-button>
+<ui-search-field ng-show="currentComponent.showIconsList"
+    value="currentComponent.data.searchKw" placeholder="search icon"></ui-search-field>
+
+<div ng-show="currentComponent.showIconsList">
+    <ul class="icon_lists clear">
+        <li ng-repeat="icon in currentComponent.data.icons track by $index"
+            ng-show="!currentComponent.data.searchKw || icon.indexOf(currentComponent.data.searchKw) > -1">
+            <ui-icon type="{{icon}}"></ui-icon>
+            <div class="name">{{icon}}</div>
+        </li>
+    </ul>
+</div>

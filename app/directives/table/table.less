@@ -1,0 +1,288 @@
+@import (reference) "../../style/theme.less";
+
+.grid-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    &.selection-transparent {
+        ::selection {
+            background: transparent;
+        }
+    }
+
+    .grid-content {
+        min-width: 100%;
+        height: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .grid-cell {
+            width: 100%;
+            height: 100%;
+            line-height: 1;
+
+            pre {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .grid-header {
+            z-index: 99;
+            background: @secondaryBackgroundColor;
+            th {
+                font-weight: 500;
+                text-align: left;
+                .col-header {
+                    position: relative;
+                    display: -ms-flexbox;
+                    display: flex;
+
+                    .col-name {
+                        -ms-flex: 1;
+                        flex: 1;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                    i {
+                        cursor: pointer;
+                        color: @secondaryTextColor;
+                        &.active {
+                            color: @primaryColor;
+                        }
+                        svg {
+                            width: .8em;
+                            height: .8em;
+                        }
+                        .icon {
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .ui-col-sorter {
+                        position: relative;
+                        i {
+                            position: absolute;
+                            width: .6em;
+                            height: .6em;
+                            vertical-align: top;
+                            &[type="caretdown"] {
+                                bottom: 1px;
+                            }
+                            &[type="caretup"] {
+                                top: 5px;
+                            }
+                            svg {
+                                width: .6em;
+                                height: .6em;
+                            }
+                            .icon {
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+
+                &> span {
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .grid-body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+            -ms-flex: 1;
+            flex: 1;
+
+            table {
+                position: relative;
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 1px;
+        min-width: 100%;
+        max-width: none;
+
+        tr {
+            outline: none;
+
+            &.active {
+                td {
+                    background-color: @secondaryBackgroundColor;
+                }
+            }
+
+            td, th {
+                padding: 10px 8px;
+                box-sizing: border-box;
+
+                input {
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+
+
+    &.ui-table-size-small {
+        td, th {
+            padding: 6px 8px;
+        }
+    }
+
+    &.ui-table-size-large {
+        td, th {
+            padding: 16px 8px;
+        }
+    }
+
+    &.ui-table-layout-fixed {
+        table {
+            table-layout: fixed;
+        }
+    }
+
+    .invisible-row,
+    .invisible-row th {
+        height: 0;
+        border-top: 0;
+        border-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .columns-selection {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        list-style: none;
+        border: 1px solid @dividerColor;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.172549);
+        background: #f2f2f2;
+        z-index: 100;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .column-menus {
+        list-style: none;
+        border: 1px solid @dividerColor;
+        padding: 1px;
+        margin: 0;
+        position: absolute;
+        z-index: 999;
+        background: #f2f2f2;
+        display: none;
+        font-size: 13px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.172549);
+        li {
+            position: relative;
+            cursor: pointer;
+            line-height: 25px;
+            padding: 0 10px;
+            input {
+                height: auto;
+                padding: 1px;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &.ui-fixed-header {
+        position: relative;
+
+        .grid-body {
+            margin-top: -1px;
+        }
+
+        .grid-content {
+            position: absolute;
+        }
+    }
+
+    &.ui-table-col-resizable {
+        .col-resizer {
+            position: absolute;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            display: inline-block;
+            cursor: col-resize;
+            z-index: 10;
+            &:hover, &.dragging {
+                background: @primaryColor;
+                opacity: 0.6;
+            }
+        }
+    }
+
+
+
+    i[type="filter"] {
+        position: relative;
+        left: 15px;
+    }
+}
+
+.grid-border table tr {
+    border-bottom: 1px solid @dividerColor;
+}
+
+.grid-header td,
+.grid-header td div,
+.grid-body td,
+.grid-body td div {
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+.table-layout-fixed {
+    table {
+        table-layout: fixed;
+    }
+
+    .grid-header td,
+    .grid-header td div,
+    .grid-body td,
+    .grid-body td div,
+    .grid-body td input {
+        /*position: relative;*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-break: break-all;
+        box-sizing: border-box;
+    }
+}
+
+.ui-table-bordered {
+    border-bottom: 1px solid @dividerColor;
+
+    table {
+        border: 1px solid @dividerColor;
+        td,th {
+            border-right: 1px solid @dividerColor;
+        }
+    }
+}

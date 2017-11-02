@@ -1,0 +1,178 @@
+@import (reference) "../../style/theme.less";
+
+.mindmap {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    white-space: nowrap;
+    color: @textPrimaryColor;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.mindmap:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+.mindmap .node {
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    border: 1px solid @primaryColor;
+    padding: 0px 10px 0px 10px;
+    margin: 4px 0;
+    //background: @lightPrimaryColor;
+    background: @primaryBackgroundColor;
+    border-radius: 40px;
+    text-align: left;
+    cursor: pointer;
+    transition: all .2s;
+    direction: ltr;
+    color: @primaryTextColor;
+}
+.mindmap .node__text{
+    display: inline-block;
+    margin-right: 10px;
+}
+.mindmap .toggle-btn {
+    position: absolute;
+    display: inline-block;
+    line-height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid 1px @primaryColor;
+    color: @primaryColor;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 15px;
+    top: 5px;
+    z-index: 100;
+    /*background-color: #ffffff;*/
+    right: 3px;
+
+}
+
+.mindmap .node:hover {
+    box-shadow: 0 0 3px 0 @lightPrimaryColor;
+}
+
+.mindmap .node:not(.node_active):hover {
+    color: @primaryColor;
+}
+
+
+.mindmap .node_warning {
+    background-color: #f35551;
+    border: 1px solid #f35551;
+    color: #fff;
+}
+
+.mindmap .node_warning .toggle-btn {
+    color: @primaryColor;
+}
+
+.mindmap .node_active {
+    background-color: @primaryColor;
+    border: 1px solid @primaryColor;
+    color: @textPrimaryColor;
+}
+
+.mindmap li.node_subitems_active ol .node {
+    background-color: @primaryColor;
+    border: 1px solid @primaryColor;
+    color: @textPrimaryColor;
+}
+
+.mindmap .node_active .toggle-btn {
+    border: 1px solid #ffffff;
+}
+.mindmap .node_active .toggle-btn {
+    color: white;
+}
+
+.mindmap .children {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    padding: 0 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mindmap .children:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    width: 10px;
+    border-top: 1px solid @primaryColor;
+}
+
+.mindmap .children__item {
+    position: relative;
+    padding: 0 0 0 10px;
+    border-left: 1px solid @primaryColor;
+}
+
+.mindmap .children__item:first-child,
+.mindmap .children__item:last-child {
+    border-left: 1px solid transparent;
+}
+
+.mindmap .children__item:before {
+    content: '';
+    width: 10px;
+    border-top: 1px solid @primaryColor;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.mindmap .children__item:first-child:before {
+    left: -1px;
+    bottom: 0;
+    border-radius: 4px 0 0 0;
+    border-left: 1px solid @primaryColor;
+}
+
+.mindmap .children__item:last-child:before {
+    left: -1px;
+    top: 0;
+    bottom: 50%;
+    border-radius: 0 0 0 4px;
+    border: 0;
+    border-left: 1px solid @primaryColor;
+    border-bottom: 1px solid @primaryColor;
+}
+
+.mindmap .children__item:first-child:last-child:before {
+    top: 50%;
+    bottom: auto;
+    border: 0;
+    border-radius: 0;
+    border-top: 1px solid @primaryColor;
+}
+@keyframes shan{
+    from{border: 1px solid green;}
+    to{border: 1px solid #ff0000;}
+}
+@-moz-keyframes shan{
+    from{border: 1px solid green;}
+    to{border: 1px solid #ff0000;}
+}
+
+.node__text{
+  /*  animation: shan 1s;
+    -moz-animation: shan 1s;    
+    -webkit-animation: shan 1s;
+    -o-animation: shan 1s;*/
+}

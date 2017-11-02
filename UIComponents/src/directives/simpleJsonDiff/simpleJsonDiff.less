@@ -1,0 +1,45 @@
+@import (reference) "../../style/theme.less";
+
+.simple-json-diff {
+    display: -ms-flexbox;
+    display: flex;
+    .copy-btn {
+        border: 1px solid @primaryColor;
+        color: @primaryColor;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 13px;
+        padding: 2px 5px;
+        &:hover {
+            
+        }
+    }
+    details {
+        &:not(last-child) {
+            margin-right: 20px;
+        }
+        pre {
+            white-space: pre-wrap;
+            border: 1px solid @dividerColor;
+            border-radius: 2px;
+            padding: 5px;
+            span {
+                color: red;
+            }
+            b {
+                color: green;
+            }
+        }
+        .details-content pre {
+            position: relative;
+            top: -20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .assert-actions {
+            position: relative;
+            text-align: right;
+            top: -20px;
+        }
+    }
+}

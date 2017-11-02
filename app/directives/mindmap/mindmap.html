@@ -1,0 +1,14 @@
+<div class="mindmap">
+    <div class="node node_root" ng-class="{'node_active': data.selected}" node-id="{{data.id}}" >
+        <div class="node__text" ng-click="select(data)">{{data.name}}</div>
+        <span class="toggle-btn"
+            ng-click="toggle(data, 1)"
+            ng-if="data.children && data.children.length">
+            {{!isExpand(data.collapsed, 1) ? '+' : '-'}}
+        </span>
+    </div>
+
+    <ol class="children children_rightbranch" ng-show="isExpand(data.collapsed, level)" ng-init="level = 1">
+        <mind-node ng-repeat="node in data.children track by $index"></mind-node>
+    </ol>
+</div>

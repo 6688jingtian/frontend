@@ -1,0 +1,76 @@
+<layout class="colorboard-view" theme="{{ctrl.selectedColor.name}}" direction="horizontal" resizable="false" height="100%">
+    <layout-left>
+        <layout height="100%">
+            <layout-top class="colorboard-view-title">交互组件展示效果</layout-top>
+            <layout-center>
+                <layout-left width="160" class="colorboard-treeview-box">
+                    <treeview data="ctrl.tree.data"
+                        show-line="ctrl.tree.showLine"
+                        selected-nodes="ctrl.tree.selectedNodes"
+                        class="ui-tree-menu"></treeview>
+                </layout-left>
+                <layout-right width="580" class="colorboard-components-box">
+                    <layout direction="vertical">
+                        <ui-table cols="ctrl.table.cols" rows="ctrl.table.rows" with-border="false" height="auto"></ui-table>
+                        <div>
+                            <ui-button class="ui-primary">一级按钮</ui-button>
+                            <ui-button class="ui-warning">消极按钮</ui-button>
+                            <ui-button>默认按钮</ui-button>
+                            <ui-button ng-disabled="true">不可操作</ui-button>
+                        </div>
+                        <div>
+                            <ui-switch></ui-switch>
+                            <ui-switch on="true" on-text="线上" off-text="线下"></ui-switch>
+                        </div>
+                        <div>
+                            <ui-radio>Radio</ui-radio>
+                            <ui-checkbox ng-model="ctrl.checkbox.checked">Checkbox</ui-checkbox>
+                        </div>
+                        <div>
+                            <ui-radio-group ng-model="ctrl.radioGroup.selectedItem">
+                                <ui-radio-button value="Bruce">Bruce</ui-radio-button>
+                                <ui-radio-button value="Alex">Alex</ui-radio-button>
+                                <ui-radio-button value="Alvy">Alvy</ui-radio-button>
+                                <ui-radio-button value="Bernard">Bernard</ui-radio-button>
+                            </ui-radio-group>
+                        </div>
+                        <div>
+                            <tabset>
+                                <tab head="Tab1">
+                                    Tab1
+                                </tab>
+                                <tab head="Tab2" select="_selectTab" active="true">
+                                    Tab2
+                                </tab>
+                                <tab head="Tab3">
+                                    Tab3
+                                </tab>
+                            </tabset>
+                        </div>
+                        <div>
+                            <dropdown data="ctrl.dropdown.data"></dropdown>
+                        </div>
+                    </layout>
+                </layout-right>
+            </layout-center>
+        </layout>
+    </layout-left>
+    <layout-right width="40%" class="colorboard-colors-box">
+        <layout direction="vertical" resizable="false">
+            <layout-top class="colorboard-view-title">选择颜色</layout-top>
+            <layout-center>
+               <div class="color-list-box">
+                   <ul class="color-list">
+                       <li ng-repeat="color in ctrl.colors track by $index" ng-style="color.style"
+                           ng-class="{selected: color.color === ctrl.selectedColor.color}"
+                           ng-click="ctrl.onSelectColor(color)">{{color.name}}</li>
+                   </ul>
+                   <div class="colorboard-view-title">色板</div>
+                   <ul class="color-palette">
+                       <li ng-repeat="(key, val) in ctrl.selectedColor.variables" ng-style="ctrl.getVariableStyle(val, key)">{{key}}</li>
+                   </ul>
+               </div>
+            </layout-center>
+        </layout>
+    </layout-right>
+</layout>

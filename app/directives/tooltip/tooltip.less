@@ -1,0 +1,47 @@
+@import (reference) "../../style/theme.less";
+
+.ui-tooltip {
+    position: absolute;
+    padding: 8px 10px;
+    background: rgba(0,0,0,.65);
+    color: @textPrimaryColor;
+    border-radius: 4px;
+    z-index: 999;
+    font-size: 12px;
+
+    &:before {
+        position: absolute;
+        content: " ";
+        left: 50%;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-width: 6px;
+        border-style: solid;
+        border-color: transparent transparent rgba(0, 0, 0, .65) transparent;
+        transform: translate(-50%, -100%);
+    }
+    &[placement="top"] {
+        &:before {
+            top: 100%;
+            transform: translate(-50%, 0);
+            border-color: rgba(0, 0, 0, .65) transparent transparent transparent;
+        }
+    }
+    &[placement="right"] {
+        &:before {
+            left: 0;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            border-color: transparent rgba(0, 0, 0, .65) transparent transparent;
+        }
+    }
+    &[placement="bottomLeft"] {
+        &:before {
+            left: 5%;
+            top: 0;
+            border-color: transparent transparent rgba(0, 0, 0, .65) transparent;
+            transform: translate(-50%, -100%);
+        }
+    }
+}
